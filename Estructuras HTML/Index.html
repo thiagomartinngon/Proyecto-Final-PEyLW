@@ -2,6 +2,7 @@
 <head>
     <title>Tienda de Musica</title>
     <link rel="stylesheet" href="Index.css">
+
 </head>
 
 <body>
@@ -21,7 +22,7 @@
                 <a href="#">Pop</a>
                 <a href="#">Cumbia</a>
                 <a href="#">K-pop</a>
-                <a href="#">Jazz</a>
+                <a href="#">Jazz</a>    
              <select name="Dispositivos" id="Dispositivos">
         <option value="Dispositivos">Dispositivos</option>  
         <option value="Auriculares"><a href="#">Auriculares</a></option>
@@ -29,30 +30,67 @@
         <option value="Reproductores"><a href="#">Reproductores</a></option>
     </select>
         </div>
+
+<div class="carrusel">
+<button class="anterior">←</button>
+
 <div class="productos">
     <div class="Album">
-        <img src="PortadaOktubre.jpg" alt="Album Oktubre">
+        <img src="Imagenes/PortadaOktubre.jpg" alt="Album Oktubre">
         <h3>Oktubre</h3>
         <p>Patricio Rey y Sus Redonditos de Ricota</p>
-        <p>$23.000</p>
+        <p>$16.000</p>
         <button>Comprar</button>    
     </div>
     <div class="Album">
-        <img src="PortadaLoboSuelto.jpg" alt="Album Lobo Suelto">
+        <img src="Imagenes/PortadaLoboSuelto.jpg" alt="Album Lobo Suelto">
         <h3>Lobo Suelto</h3>
         <p>Patricio Rey y Sus Redonditos de Ricota</p>
-        <p>$23.000</p>
+        <p>$16.000</p>
         <button>Comprar</button>    
     </div>
     <div class="Album">
-        <img src="PortadaAfterChabon.jpg" alt="Album After Chabon">
+        <img src="Imagenes/PortadaAfterChabon.jpg" alt="Album After Chabon">
         <h3>After Chabon</h3>
         <p>Sumo</p>
-        <p>$18.000</p>
+        <p>$28.000</p>
         <button>Comprar</button>    
     </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaBocanada.jpg" alt="Album Bocanada">
+        <h3>Bocanada</h3>
+        <p>Gustavo Cerati</p>
+        <p>$26.000</p>
+        <button>Comprar</button>    
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaPelusonOfMilk.jpg" alt="Album Peluson of Milk">
+        <h3>Peluson of Milk</h3>
+        <p>Luis Alberto Spinetta</p>
+        <p>$35.000</p>
+        <button>Comprar</button>    
+    </div>
+    </div>
+
+     <button class="siguiente">→</button>
+    </div> 
     
 </div>
+
+<script>
+    const productos = document.querySelector(".productos");
+    const siguiente = document.querySelector(".siguiente");
+    const anterior = document.querySelector(".anterior");
+
+    siguiente.addEventListener("click", function() {
+        productos.scrollLeft += 300;
+    });
+
+    anterior.addEventListener("click", function() {
+        productos.scrollLeft -= 300;
+    });
+</script>
+
 </body>
 <foot>
 <div class="tituloProyecto">

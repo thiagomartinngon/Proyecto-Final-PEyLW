@@ -1,28 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+.body {
+    padding: 0;
+    margin: 0;
+}
+
 .contenedor {
   display: flex;
   flex-direction: column;
 }
 
 .encabezado{
-  height: 120px;
+  height: 150px;
   margin-bottom: 10px;
   padding: 20px;
   border: 3px solid;
   min-height: 60px;
 }
 
-.h1, .h2 {
-margin: 5px;    
+.encabezado h1 {
+  margin-bottom: 5px;
 }
+
+.encabezado h2 {
+  margin-top: 0;
+}
+
     .Categorias {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 5px;
+    overflow-x: scroll;
+    scrollbar-width: none;
     }        
+
     .Categorias a {
     flex: 1;        
     text-align: center;
-    padding: 15px;
+    padding: 5px;
     border: 2px solid;
     }
 
@@ -34,18 +52,25 @@ margin: 5px;
     box-sizing: border-box;
 }
 
+.carrusel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
     .productos {
     display: flex;
     gap: 20px;
     padding: 20px;
+    overflow: hidden;
+    
 }
 
 .album {
-    flex: 25%;
+    flex: 0 0 25%;
     border: 2px solid;
     padding: 15px;
     text-align: center;
-    width: 200px;
 }
 
 .album img {
@@ -53,4 +78,10 @@ margin: 5px;
     width: 150px;
     height: 150px;
     object-fit: cover;
+}
+
+.anterior,
+.siguiente {
+    font-size: 15px;
+    padding: 10px;
 }
