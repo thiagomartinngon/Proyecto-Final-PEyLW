@@ -28,6 +28,12 @@
   margin-top: 0;
 }
 
+.titulo-rock, .titulo-pop {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
     .Categorias {
     display: flex;
     flex-direction: row;
@@ -58,12 +64,12 @@
     gap: 10px;
 }
 
-    .productos {
+.productos1, .productos2 {
     display: flex;
     gap: 20px;
     padding: 20px;
     overflow: hidden;
-    
+    flex: 1;
 }
 
 .album {

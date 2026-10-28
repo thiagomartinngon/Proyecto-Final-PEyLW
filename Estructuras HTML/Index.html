@@ -31,10 +31,12 @@
     </select>
         </div>
 
+<h2 class="titulo-rock">Lo más relevante del Rock</h2>
+
 <div class="carrusel">
 <button class="anterior">←</button>
 
-<div class="productos">
+<div class="productos1">
     <div class="Album">
         <img src="Imagenes/PortadaOktubre.jpg" alt="Album Oktubre">
         <h3>Oktubre</h3>
@@ -70,17 +72,91 @@
         <p>$35.000</p>
         <button>Comprar</button>    
     </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaTheCure.jpg" alt="Album The Cure">
+        <h3>The Cure</h3>
+        <p>The Cure</p>
+        <p>$40.000</p>
+        <button>Comprar</button>
     </div>
-
+    <div class="Album">
+        <img src="Imagenes/PortadaRiot.jpg" alt="Album Riot">
+        <h3>Riot!</h3>
+        <p>Paramore</p>
+        <p>$30.000</p>
+        <button>Comprar</button>
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaAmericanIdiot.jpg" alt="Album American Idiot">
+        <h3>American Idiot</h3>
+        <p>Green Day</p>
+        <p>$25.000</p>
+        <button>Comprar</button>
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaLetGo.jpg" alt="Album Let Go">
+        <h3>Let Go</h3>
+        <p>Avril Lavigne</p>
+        <p>$32.000</p>
+        <button>Comprar</button>
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaWeezer.jpg" alt="Album Weezer">
+        <h3>Weezer</h3>
+        <p>Weezer</p>
+        <p>$28.000</p>
+        <button>Comprar</button>
+    </div>
+    
+    </div>  
      <button class="siguiente">→</button>
-    </div> 
     
 </div>
 
 <script>
-    const productos = document.querySelector(".productos");
+    const productos = document.querySelector(".productos1");
     const siguiente = document.querySelector(".siguiente");
     const anterior = document.querySelector(".anterior");
+
+    siguiente.addEventListener("click", function() {
+        productos.scrollLeft += 300;
+    });
+
+    anterior.addEventListener("click", function() {
+        productos.scrollLeft -= 300;
+    });
+</script>
+
+<h2 class="titulo-pop">Puro Pop del bueno</h2>
+
+<div class="carrusel">
+<button class="anterior2">←</button>
+
+<div class="productos2">
+    <div class="Album">
+        <img src="Imagenes/PortadaOliviaRodrigo.jpg" alt="Album Olivia Rodrigo">
+        <h3>You Seem Pretty Sad For a Girl So in Love</h3>
+        <p>Olivia Rodrigo</p>
+        <p>$30.000</p>
+        <button>Comprar</button>    
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaLaurelHell.jpg" alt="Album Laurel Hell">
+        <h3>Laurel Hell</h3>
+        <p>Mitski</p>
+        <p>$40.000</p>
+        <button>Comprar</button>    
+    </div>
+    
+    </div>  
+     <button class="siguiente2">→</button>
+    
+</div>
+
+<script>
+    const productos = document.querySelector(".productos2");
+    const siguiente = document.querySelector(".siguiente2");
+    const anterior = document.querySelector(".anterior2");
 
     siguiente.addEventListener("click", function() {
         productos.scrollLeft += 300;
