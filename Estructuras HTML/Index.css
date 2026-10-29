@@ -86,8 +86,7 @@
     object-fit: cover;
 }
 
-.anterior,
-.siguiente {
+.anterior, .siguiente, .anterior2,.siguiente2 {
     font-size: 15px;
     padding: 10px;
 }
