@@ -20,7 +20,7 @@
     <div class="Categorias">
                 <a href="#">Rock</a>
                 <a href="#">Pop</a>
-                <a href="#">Cumbia</a>
+                <a href="#">Soundtrack</a>
                 <a href="#">K-pop</a>
                 <a href="#">Jazz</a>    
              <select name="Dispositivos" id="Dispositivos">
@@ -213,6 +213,88 @@
 
     anteriorPop.addEventListener("click", function() {
         productosPop.scrollLeft -= 300;
+    });
+</script>
+
+<h2 class="titulo-soundtrack">Soundtracks inolvidables</h2>
+
+<div class="carrusel">
+<button class="anterior3">←</button>
+
+<div class="productos3">
+    <div class="Album">
+        <img src="Imagenes/PortadaKungFuPanda.jpg" alt="Album Kung Fu Panda">
+        <h3>Kung Fu Panda (Original Motion Picture Soundtrack)</h3>
+        <p>Hans Zimmer, John Powell</p>
+        <p>$25.000</p>
+        <button>Comprar</button>    
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaAliceMadnessReturn.jpg" alt="Album Alice Madness Return">
+        <h3>Alice: Madness Return (Original Videogame Soundtrack)</h3>
+        <p>Jason Tai, Marshall Crutcher, Chris Vrenna</p>
+        <p>$25.000</p>
+        <button>Comprar</button>    
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaSonicAdventure.jpg" alt="Album Sonic Adventure">
+        <h3>Sonic Adventure (Original Videogame Soundtrack)</h3>
+        <p>Jun Senoue, Kenichi Tokoi, Fumie Kumatani, Tomoya Ohtani</p>
+        <p>$25.000</p>
+        <button>Comprar</button>    
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaTrolls.jpg" alt="Album Trolls">
+        <h3>Trolls Band Together (Original Motion Picture Soundtrack)</h3>
+        <p>Trolls Band</p>
+        <p>$25.000</p>
+        <button>Comprar</button>    
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaDeadOrAlive3.jpg" alt="Album Dead or Alive 3">
+        <h3>Dead or Alive 3 Original Sound Trax</h3>
+        <p>Makoto Hosoi, Takafumi Inamori, Ryo Koike</p>
+        <p>$25.000</p>
+        <button>Comprar</button>    
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaCars.jpg" alt="Album Cars">
+        <h3>Cars (Original Motion Picture Soundtrack)</h3>
+        <p>John Powell, Randy Newman</p>
+        <p>$25.000</p>
+        <button>Comprar</button>    
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaZelda.jpg" alt="Album The Legend of Zelda">
+        <h3>The Legend of Zelda: Ocarina of Time (Original Soundtrack)</h3>
+        <p>Koji Kondo</p>
+        <p>$25.000</p>
+        <button>Comprar</button>    
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaRocky.jpg" alt="Album Rocky">
+        <h3>Rocky III: "Eye of the Tiger survivor" (Original Motion Picture Soundtrack)</h3>
+        <p>Frankie Sullivan, Jim Peterik</p>
+        <p>$25.000</p>
+        <button>Comprar</button>    
+    </div>
+
+    </div>  
+     <button class="siguiente3">→</button>
+    
+</div>
+
+<script>
+    const productosSoundtrack = document.querySelector(".productos3");
+    const siguienteSoundtrack = document.querySelector(".siguiente3");
+    const anteriorSoundtrack = document.querySelector(".anterior3");
+
+    siguienteSoundtrack.addEventListener("click", function() {
+        productosSoundtrack.scrollLeft += 300;
+    });
+
+    anteriorSoundtrack.addEventListener("click", function() {
+        productosSoundtrack .scrollLeft -= 300;
     });
 </script>
 
