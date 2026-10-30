@@ -408,9 +408,132 @@
     });
 </script>
 
+<h2 class="titulo-Jazz">Joyitas del Jazz</h2>
+
+<div class="carrusel">
+<button class="anterior5">←</button>
+
+<div class="productos5">
+    <div class="Album">
+        <img src="Imagenes/PortadaAMatterofTime.jpg" alt="Album A Matter of Time">
+        <h3>A Matter of Time: The Final Hour</h3>
+        <p>Laufey</p>
+        <p>$35.000</p>
+        <button>Comprar</button>    
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaBewitched.jpg" alt="Album Bewitched">
+        <h3>Bewitched: The Goddess Edition</h3>
+        <p>Laufey</p>
+        <p>$35.000</p>
+        <button>Comprar</button>    
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaKindofBlue.jpg" alt="Album Kind of Blue">
+        <h3>Kind of Blue</h3>
+        <p>Miles Davis</p>
+        <p>$45.000</p>
+        <button>Comprar</button>    
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaGetzGiliberto.jpg" alt="Album Getz/Gilberto">
+        <h3>Getz/Gilberto</h3>
+        <p>Stan Getz, João Gilberto</p>
+        <p>$50.000</p>
+        <button>Comprar</button>    
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaTheBestOfChickCorea.jpg" alt="Album The Best of Chick Corea">
+        <h3>The Best of Chick Corea</h3>
+        <p>Chick Corea</p>
+        <p>$40.000</p>
+        <button>Comprar</button>    
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaBossaHulaNova.jpg" alt="Album Bossa Hula Nova">
+        <h3>Bossa Hula Nova</h3>
+        <p>Lisa Ono</p>
+        <p>$50.000</p>
+        <button>Comprar</button>    
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaSeychelles.jpg" alt="Album SEYCHELLES">
+        <h3>SEYCHELLES</h3>
+        <p>Masayoshi Takanaka</p>
+        <p>$35.000</p>
+        <button>Comprar</button>    
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaBrasilianSkies.jpg" alt="Album Brasilian Skies">
+        <h3>Brasilian Skies</h3>
+        <p>Masayoshi Takanaka</p>
+        <p>$35.000</p>
+        <button>Comprar</button>    
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaMemoryBomb.jpg" alt="Album Memory Bomb">
+        <h3>Memory Bomb</h3>
+        <p>Kiefer</p>
+        <p>$50.000</p>
+        <button>Comprar</button>    
+    </div>
+    <div class="Album">
+        <img src="Imagenes/PortadaDedicatedToYou.jpg" alt="Album Dedicated to You">
+        <h3>Dedicated to You</h3>
+        <p>Branford Marsalis Quartet</p>
+        <p>$43.000</p>
+        <button>Comprar</button>    
+    </div>
+
+    </div>  
+     <button class="siguiente5">→</button>
+    
+</div>
+
+<script>
+    const productosJazz = document.querySelector(".productos5");
+    const siguienteJazz = document.querySelector(".siguiente5");
+    const anteriorJazz = document.querySelector(".anterior5");
+
+    siguienteJazz.addEventListener("click", function() {
+        productosJazz.scrollLeft += 300;
+    });
+
+    anteriorJazz.addEventListener("click", function() {
+        productosJazz .scrollLeft -= 300;
+    });
+</script>
+
 </body>
-<foot>
+
+<footer class="pie">
 <div class="tituloProyecto">
-    <p></p>
-</foot>
+    <h2>Tienda de música</h2>
+    <p>La música que querés, la tenemos acá.</p>
+    </div>
+
+    <div class="informacion">
+        <div>
+            <h3>Sobre nosotros</h3>
+            <p>Somos estudiantes de 5to5ta haciendo un proyecto de final sobre una tienda de música en línea.</p>
+            <P>Usamos todo nuestro intelecto, conocimientos y creatividad para crear todo esto.</P>
+            <p>Para la materia de Programación Estática y Laboratorio Web.</p>
+        </div>
+        <div>
+            <h3>Contacto</h3>
+            <p>Email: tienda@gmail.com</p>
+            <p>Instagram: @tiendademusica</p>
+        </div>
+         <div>
+            <h3>Redes sociales</h3>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>TikTok</p>
+        </div>
+    </div>
+    <div class="derechosAutor">
+        <p>© 2026 Tienda de música - Todos los derechos reservados.</p>
+    </div>
+
+</footer>
 </html>        

@@ -28,7 +28,7 @@
   margin-top: 0;
 }
 
-.titulo-rock, .titulo-pop, .titulo-soundtrack, .titulo-kpop {
+.titulo-rock, .titulo-pop, .titulo-soundtrack, .titulo-kpop, .titulo-Jazz {
     text-align: center;
     margin-bottom: 5px;
     font-size: 28px;
@@ -64,7 +64,7 @@
     gap: 10px;
 }
 
-.productos1, .productos2, .productos3, .productos4 {
+.productos1, .productos2, .productos3, .productos4, .productos5 {
     display: flex;
     gap: 20px;
     padding: 20px;
@@ -87,7 +87,33 @@
 }
 
 .anterior, .siguiente, .anterior2,.siguiente2,
- .anterior3,.siguiente3, .anterior4,.siguiente4 {
+ .anterior3,.siguiente3, .anterior4,.siguiente4,
+  .anterior5,.siguiente5 {
     font-size: 15px;
     padding: 10px;
+}
+
+.pie {
+    padding: 30px;
+    margin-top: 40px;
+    border-top: 1px solid black;
+}
+
+.informacion {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.informacion div {
+    width: 25%;
+    text-align: center;
+}
+
+.derechosAutor {
+    text-align: center;
+    border-top: 1px solid black;
+    margin-top: 25px;
+    padding-top: 20px;
+    width: 100%;
 }
