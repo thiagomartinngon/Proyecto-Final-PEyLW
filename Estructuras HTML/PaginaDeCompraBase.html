@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Álbum - Tienda de música</title>
+    <link rel="stylesheet" href="PaginaDeCompraBase.css">
+</head>
+
+<body>
+
+<header>
+    <div class="encabezado"> 
+        <div class="h1">    
+        <h1>Tienda de musica</h1>
+        </div>
+        <div class="h2">
+        <h2>"La musica que querés, la tenemos acá"</h2>
+        </div>
+    </div> 
+
+</header>
+
+<main>
+
+    <section class="izquierda">
+
+        <div class="portada">
+            <img src="Imagenes/PortadaOktubre.jpg" alt="Portada del álbum">
+        </div>
+
+        <div class="descripcion">
+            <h2>Descripción</h2>
+            <p>
+                Oktubre es el segundo álbum de estudio de Patricio Rey
+                y sus Redonditos de Ricota, publicado en 1986.
+            </p>
+
+            <div class="tracklist">
+                <h3>Lista de canciones</h3>
+                <ol>
+                    <li>Fuegos de octubre</li>
+                    <li>Preso en mi ciudad</li>
+                    <li>Música para pastillas</li>
+                    <li>Semen-Up</li>
+                    <li>Divina TV Führer</li>
+                </ol>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="info">
+
+        <h1>Oktubre</h1>
+        <h2>Patricio Rey y sus Redonditos de Ricota</h2>
+
+        <p>Código de producto: 000123</p>
+        <p>Stock: Disponible</p>
+
+        <fieldset>
+            <legend>Elegí el formato</legend>
+
+            <input type="radio" name="formato" id="cd" value="12000" checked>
+            <label for="cd">CD</label>
+
+            <input type="radio" name="formato" id="vinilo" value="28000">
+            <label for="vinilo">Vinilo</label>
+
+            <input type="radio" name="formato" id="casete" value="9000">
+            <label for="casete">Casete</label>
+
+        </fieldset>
+
+        <div class="precio">
+            <p>Precio:</p>
+            <h2 id="precio">$12.000</h2>
+        </div>
+
+        <button class="comprar">Comprar</button>
+
+    </section>
+
+</main>
+
+<footer class="pie">
+<div class="tituloProyecto">
+    <h2>Tienda de música</h2>
+    <p>La música que querés, la tenemos acá.</p>
+    </div>
+
+    <div class="informacion">
+        <div>
+            <h3>Sobre nosotros</h3>
+            <p>Somos estudiantes de 5to5ta haciendo un proyecto de final sobre una tienda de música en línea.</p>
+            <P>Usamos todo nuestro intelecto, conocimientos y creatividad para crear todo esto.</P>
+            <p>Para la materia de Programación Estática y Laboratorio Web.</p>
+            <a href="Nosotros.html">Conoce más sobre nosotros</a>
+        </div>
+        <div>
+            <h3>Contacto</h3>
+            <p>Email: tienda@gmail.com</p>
+            <p>Instagram: @tiendademusica</p>
+        </div>
+         <div>
+            <h3>Redes sociales</h3>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>TikTok</p>
+        </div>
+    </div>
+    <div class="derechosAutor">
+        <p>© 2026 Tienda de música - Todos los derechos reservados.</p>
+    </div>
+
+</footer>
+
+<script>
+    const precio = document.querySelector("#precio");
+    const formatos = document.querySelectorAll('input[name="formato"]');
+
+    formatos.forEach(function(formato) {
+        formato.addEventListener("change", function() {
+            precio.textContent = "$" + Number(formato.value).toLocaleString("es-AR");
+        });
+    });
+</script>
+
+</body>
+</html>
