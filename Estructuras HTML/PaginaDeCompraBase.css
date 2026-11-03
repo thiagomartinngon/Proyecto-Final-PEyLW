@@ -29,6 +29,36 @@
   margin-top: 0;
 }   
 
+.Categorias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    }        
+
+    .Categorias a:link, .Categorias a:visited {
+    color: black;
+    }
+
+    .Categorias a {
+    flex: 1;        
+    text-align: center;
+    padding: 5px;
+    border: 2px solid;
+    background-color: rgb(89, 0, 158);
+    }
+
+    .Categorias select {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid;
+    box-sizing: border-box;
+    background-color: rgb(89, 0, 158);
+}
+
 main {
     display: flex;
     gap: 40px;
