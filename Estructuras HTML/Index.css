@@ -5,75 +5,143 @@
 }
 
 body {
-    background: url("Estilo Imagenes/fondoPaginaIndex.jpg");
+    background: url("Estilo Imagenes/FondoPaginaIndex.svg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
 }
+
 
 
 .contenedor {
   display: flex;
   flex-direction: column;
-  background-color: rgb(255, 0, 128);
+  background-color: rgb(202, 0, 101, 0.8);
 }
 
+header{
+    position: relative;
+}
+header nav {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  align-items: center;
+}
+
+header nav img{
+  height: 50px;
+
+}
+
+#contadorCarrito {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: hsl(0, 100%, 49%);
+  color: #f3f3f3;
+  border-radius: 100%;
+  display: inline-block;
+  width: 20px;
+  line-height: 20px;
+  aspect-ratio: 1;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+ 
+}
 .encabezado{
   height: 150px;
   padding: 20px;
-  border: 3px solid;
   min-height: 60px;
+  font-family: Georgia, serif;
+
+  position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
 }
 
 .encabezado h1 {
-  color: white;
-  -webkit-text-stroke: 1px black;
+  color: rgb(255, 200, 0);
 }
 
 .encabezado h2 {
   margin-top: 0;
-  color: white; 
-  -webkit-text-stroke: 1px black;
+  color: rgb(255, 200, 0);
+}
+
+.buscador {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    gap: 10px;
+}
+
+.buscador input {
+    padding: 12px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.buscador button {
+    padding: 12px 20px;
+    background-color: rgb(89, 0, 158);
+    color: white;
+    border: none;
+    border-radius: 20px;
 }
 
 .titulo-rock, .titulo-pop, .titulo-soundtrack, .titulo-kpop, .titulo-Jazz {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     color: white;
-    -webkit-text-stroke: 1px black;
+    text-shadow: black 4px 4px 4px;
 }
 
     .Categorias {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5px;
-    overflow-x: scroll;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    overflow-x: auto;
     scrollbar-width: none;
-    }        
+}
+
+.Categorias a {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    border: 2px solid rgb(255, 207, 48);
+    border-radius: 20px;
+    background-color: rgb(89, 0, 158, 0.8);
+    color: white;
+    text-decoration: none;
+}       
 
     .Categorias a:link, .Categorias a:visited {
-    color: black;
-    }
-
-    .Categorias a {
-    flex: 1;        
-    text-align: center;
-    padding: 5px;
-    border: 2px solid;
-    background-color: rgb(89, 0, 158);
+    color: white;
     }
 
     .Categorias select {
     flex: 1;
     text-align: center;
+    color: white;
     padding: 15px;
-    border: 2px solid;
+    border: 2px solid rgb(230, 0, 134);
     box-sizing: border-box;
-    background-color: rgb(89, 0, 158);
+    border-radius: 20px;
+    background-color: rgb(89, 0, 158, 0.8);
 }
 
 .carrusel {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 10px;      
 }
 
 .productos1, .productos2, .productos3, .productos4, .productos5 {
@@ -82,14 +150,22 @@ body {
     padding: 20px;
     overflow: hidden;
     flex: 1;
+    scroll-behavior: smooth;
 }
 
 .album {
-    flex: 0 0 25%;
+    flex: 0 0 20%;
     border: 2px solid;
     padding: 15px;
     text-align: center;
-    background-color: rgb(0, 170, 255);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    transition: transform 0.3s;
+
+}
+
+.album:hover {
+    transform: scale(1.05);
 }
 
 .album img {
@@ -105,30 +181,49 @@ body {
   .anterior5,.siguiente5 {
     font-size: 15px;
     padding: 10px;
+     border-radius: 15px;
+     transition-duration: 2s;
+     transition-property: all;
+     transition-timing-function: ease-in-out;
+     
 }
 
-.pie {
-    padding: 30px;
-    margin-top: 40px;
-    border-top: 1px solid black;
-    background-color: rgb(255, 200, 0);
+.comprar {
+    background-color: rgb(202, 0, 101);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 16px;
 }
 
-.informacion {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
+.comprar a:hover, .comprar a:visited {
+    color: white;
 }
 
-.informacion div {
-    width: 25%;
-    text-align: center;
-}
+    .pie {
+        padding: 30px;
+        margin-top: 40px;
+        border-top: 1px solid black;
+        background-color: rgb(255, 200, 0);
+    }
 
-.derechosAutor {
-    text-align: center;
-    border-top: 1px solid black;
-    margin-top: 25px;
-    padding-top: 20px;
-    width: 100%;
-}
+    .informacion {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .informacion div {
+        width: 25%;
+        text-align: center;
+    }
+
+    .derechosAutor {
+        text-align: center;
+        border-top: 1px solid black;
+        margin-top: 25px;
+        padding-top: 20px;
+        width: 100%;
+    }
+

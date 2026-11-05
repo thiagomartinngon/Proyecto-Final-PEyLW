@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tu Compra - Tienda de Música</title>
+    <style>
+        /* Estilos oscuros que combinan con el diseño de sus carruseles */
+        body {
+            background-color: #0b020f; 
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            margin: 0;
+        }
+        .contenedor-carrito {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #190a21;
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid hwb(278 97% 0%);
+        }
+        .item-disco {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #444;
+            padding: 15px 0;
+        }
+        .btn-vaciar {
+            background: #ff3366;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn-volver {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: hwb(278 97% 0%);
+            color: #000;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-carrito">
+        <h1>Productos en tu carrito</h1>
+        
+        <!-- JavaScript usará este div con este ID específico para dibujar los discos comprados -->
+        <div id="lista-compra"></div>
+
+        <!-- Aquí se mostrará el total de dinero acumulado -->
+        <div id="zona-total" style="margin-top: 30px; text-align: right;"></div>
+        
+        <a href="Index.html" class="btn-volver">Volver a la tienda</a>
+    </div>
+
+    <script>
+        function mostrarProductos() {
+            // Lee los discos guardados de la memoria de la PC
+            const listaCarrito = JSON.parse(localStorage.getItem("carritoTienda")) || [];
+            const contenedorLista = document.getElementById("lista-compra");
+            const contenedorTotal = document.getElementById("zona-total");
+            
+            // Si no compraron nada aún
+            if (listaCarrito.length === 0) {
+                contenedorLista.innerHTML = "<h3 style='text-align:center; opacity:0.6;'>Tu carrito está completamente vacío.</h3>";
+                contenedorTotal.innerHTML = "";
+                return;
+            }
+
+            contenedorLista.innerHTML = "";
+            let granTotal = 0;
+
+            // Recorre cada disco guardado y arma su fila visual
+            listaCarrito.forEach(prod => {
+                let subtotal = prod.precio * prod.cantidad;
+                granTotal += subtotal;
+
+                contenedorLista.innerHTML += `
+                    <div class="item-disco">
+                        <img src="${prod.imagen}" width="70" style="border-radius:5px; object-fit: cover;">
+                        <div style="flex-grow: 1; margin-left: 20px;">
+                            <h3 style="margin: 0 0 5px 0;">${prod.titulo}</h3>
+                            <p style="margin: 0; opacity: 0.7;">Cantidad: ${prod.cantidad}</p>
+                        </div>
+                        <h3>$${subtotal.toLocaleString('es-AR')}</h3>
+                    </div>
+                `;
+            });
+
+            // Agrega el precio final y el botón para resetear la compra
+            contenedorTotal.innerHTML = `
+                <h2>Total a pagar: $${granTotal.toLocaleString('es-AR')}</h2>
+                <button onclick="limpiarTodo()" class="btn-vaciar">Vaciar Carrito</button>
+            `;
+        }
+
+        function limpiarTodo() {
+            localStorage.removeItem("carritoTienda");
+            mostrarProductos(); // Recarga la lista vacía en pantalla
+        }
+
+        // Corre la función automáticamente apenas el usuario entra a la página del carrito
+        mostrarProductos();
+    </script>
+</body>
+</html>

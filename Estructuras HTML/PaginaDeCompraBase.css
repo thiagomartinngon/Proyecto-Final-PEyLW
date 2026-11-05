@@ -67,6 +67,17 @@ main {
     padding: 5px;
 }
 
+.volverIndex {
+    display: inline-block; 
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: hwb(278 97% 0%);
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none; 
+}
+
 /* PARTE DERECHA */
 
 .info {
@@ -110,14 +121,14 @@ fieldset label {
 
 /* BOTÓN */
 
-.comprar {
+.agregar-al-carrito {
     width: 100%;
     padding: 15px;
     border: 2px solid black;
     font-size: 18px;
 }
 
-.comprar:hover {
+.agregar-al-carrito:hover {
     background-color: grey;
 }
 

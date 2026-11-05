@@ -47,6 +47,8 @@
             </div>
         </div>
 
+       <a href="Index.html" class="volverIndex">Volver a la página principal</a>
+
     </section>
 
     <section class="info">
@@ -76,7 +78,9 @@
             <h2 id="precio">$12.000</h2>
         </div>
 
-        <button class="comprar">Comprar</button>
+        <button class="comprar">Agregar al carrito</button>
+       
+
 
     </section>
 
@@ -122,6 +126,62 @@
         formato.addEventListener("change", function() {
             precio.textContent = "$" + Number(formato.value).toLocaleString("es-AR");
         });
+    });
+</script>
+<script>
+    
+    const datosDisco = JSON.parse(localStorage.getItem("discoParaFicha"));
+
+    if (datosDisco) {
+       
+        document.querySelector(".portada img").src = datosDisco.imagen;
+        document.querySelector(".info h1").textContent = datosDisco.titulo;
+        document.querySelector(".info h2").textContent = datosDisco.artista;
+        
+       
+        document.title = datosDisco.titulo + " - Tienda de música";
+    }
+
+    
+    const opcionesFormato = document.querySelectorAll('input[name="formato"]');
+    const textoPrecio = document.getElementById('precio');
+
+    opcionesFormato.forEach(radio => {
+        radio.addEventListener('change', function() {
+            const precioSeleccionado = parseInt(this.value);
+            textoPrecio.textContent = "$" + precioSeleccionado.toLocaleString('es-AR');
+        });
+    });
+
+
+    const botonComprar = document.querySelector('.comprar');
+
+    botonComprar.addEventListener('click', function() {
+        const formatoMarcado = document.querySelector('input[name="formato"]:checked');
+        const tituloActual = document.querySelector(".info h1").textContent;
+        const imagenActual = document.querySelector(".portada img").src;
+
+        const productoParaCarrito = {
+            id: tituloActual.replace(/\s+/g, '-').toLowerCase() + "-" + formatoMarcado.id, 
+            titulo: tituloActual + " (" + formatoMarcado.id.toUpperCase() + ")", 
+            precio: parseInt(formatoMarcado.value),
+            imagen: imagenActual, 
+            cantidad: 1
+        };
+
+        let carrito = JSON.parse(localStorage.getItem("carritoTienda")) || [];
+        
+        const existe = carrito.find(item => item.id === productoParaCarrito.id);
+        if (existe) {
+            existe.cantidad++;
+        } else {
+            carrito.push(productoParaCarrito);
+        }
+
+        localStorage.setItem("carritoTienda", JSON.stringify(carrito));
+
+        alert(`¡Se agregó ${productoParaCarrito.titulo} al carrito!`);
+        window.location.href = "CarritoDeCompras.html"; 
     });
 </script>
 
