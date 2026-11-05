@@ -17,7 +17,11 @@ body {
 .contenedor {
   display: flex;
   flex-direction: column;
+
   background-color: rgb(202, 0, 101, 0.8);
+
+  background-color: rgba(202, 0, 101, 0.8);
+
 }
 
 header{
@@ -115,10 +119,14 @@ header nav img{
 .Categorias a {
     flex: 1;
     text-align: center;
-    padding: 12px;
+    padding: 15px;
     border: 2px solid rgb(255, 207, 48);
     border-radius: 20px;
+
     background-color: rgb(89, 0, 158, 0.8);
+
+    background-color: rgba(89, 0, 158, 0.8);
+
     color: white;
     text-decoration: none;
 }       
@@ -135,7 +143,11 @@ header nav img{
     border: 2px solid rgb(230, 0, 134);
     box-sizing: border-box;
     border-radius: 20px;
+
     background-color: rgb(89, 0, 158, 0.8);
+
+    background-color: rgba(89, 0, 158, 0.8);
+
 }
 
 .carrusel {
@@ -152,8 +164,8 @@ header nav img{
     flex: 1;
     scroll-behavior: smooth;
 }
+.Album {
 
-.album {
     flex: 0 0 20%;
     border: 2px solid;
     padding: 15px;
@@ -168,7 +180,11 @@ header nav img{
     transform: scale(1.05);
 }
 
-.album img {
+.Album:hover {
+    transform: scale(1.05);
+}
+
+.Album img {
     margin-top: 10px;
     width: 150px;
     height: 150px;
@@ -189,6 +205,8 @@ header nav img{
 }
 
 .comprar {
+    display: inline-block;
+    text-decoration: none;
     background-color: rgb(202, 0, 101);
     color: white;
     border: none;

@@ -1,33 +1,103 @@
 
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.body {
-    padding: 0;
+body {
+    background-image: url("Estilo Imagenes/FondoPaginaCompra.svg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     margin: 0;
 }
 
 .contenedor {
   display: flex;
   flex-direction: column;
+  background-color: rgb(202, 0, 101, 0.8);
 }
 
 .encabezado{
   height: 150px;
-  margin-bottom: 10px;
   padding: 20px;
-  border: 3px solid;
   min-height: 60px;
+  font-family: Georgia, serif;
+  position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
 }
 
 .encabezado h1 {
-  margin-bottom: 5px;
+  color: rgb(255, 200, 0);
 }
 
 .encabezado h2 {
   margin-top: 0;
-}   
+  color: rgb(255, 200, 0);
+}
+
+.buscador {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    gap: 10px;
+}
+
+.buscador input {
+    padding: 12px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.buscador button {
+    padding: 12px 20px;
+    background-color: rgb(89, 0, 158);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+ .Categorias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.Categorias a {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    border: 2px solid rgb(255, 207, 48);
+    border-radius: 20px;
+    background-color: rgb(89, 0, 158, 0.8);
+    color: white;
+    text-decoration: none;
+}       
+
+    .Categorias a:link, .Categorias a:visited {
+    color: white;
+    }
+
+    .Categorias select {
+    flex: 1;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    border: 2px solid rgb(230, 0, 134);
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: rgb(89, 0, 158, 0.8);
+}
 
 main {
     display: flex;
@@ -36,6 +106,7 @@ main {
     margin: 20px auto;
     width: 85%;
     border: 2px solid black;
+    background-color: rgba(255, 254, 254, 0.8);
 }
 
 .izquierda {
@@ -67,6 +138,7 @@ main {
     padding: 5px;
 }
 
+
 .volverIndex {
     display: inline-block; 
     margin-top: 20px;
@@ -79,6 +151,7 @@ main {
 }
 
 /* PARTE DERECHA */
+
 
 .info {
     width: 50%;
@@ -97,12 +170,24 @@ main {
     margin-top: 20px;
 }
 
-/* FORMATOS */
+.comprar {
+    background-color: rgb(202, 0, 101);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.comprar a:hover, .comprar a:visited {
+    color: white;
+}
 
 fieldset {
     margin-top: 30px;
     padding: 20px;
     border: 1px solid black;
+    border-radius: 20px;
 }
 
 fieldset label {
@@ -136,6 +221,7 @@ fieldset label {
     padding: 30px;
     margin-top: 40px;
     border-top: 1px solid black;
+    background-color: rgb(255, 200, 0);
 }
 
 .informacion {
