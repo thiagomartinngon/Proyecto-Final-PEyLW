@@ -1,0 +1,33 @@
+  
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 5;
+    
+}
+
+body {
+    background-image:url("Estilo Imagenes/fondoFormulario.svg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+.registro {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    color:white;
+    background-color: rgba(5, 0, 5, 0.493);
+}
+
+.fieldset {
+    text-align: center;
+}
+
+.input {
+    display: block;
+    margin: 5px auto;
+    color: white;
+}
