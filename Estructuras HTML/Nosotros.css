@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background: url("Estilo Imagenes/FondoNosotros.svg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+        
+h1 {
+    font-family: Georgia, serif;
+    color: rgb(255, 200, 0);
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    color: rgb(255, 200, 0);
+    margin-top: 20px;
+}
+
+h3 {
+    font-family: Georgia, serif;
+    color: rgb(255, 200, 0);
+    margin-top: 20px;
+}
+
+p {
+    font-family: Georgia, serif;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+
+.dominio {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    line-height: 1.5;
+}
+
+.titulo-integrantes {
+    text-align: center;
+    margin: 30px;
+}
+
+.integrantes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.integrante {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.integrante h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.integrante p {
+    font-weight: bold;
+}
+
+.integrante ul {
+    padding-left: 20px;
+}
+
+.integrante li {
+    color: white;
+    font-family: Georgia, serif;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.volver {
+    text-align: center;
+    padding: 20px;
+}

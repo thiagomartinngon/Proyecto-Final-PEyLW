@@ -20,13 +20,36 @@ body {
 
   background-color: rgb(202, 0, 101, 0.8);
 
-  background-color: rgba(202, 0, 101, 0.8);
 
 }
 
 header{
     position: relative;
 }
+
+.registrarse {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+.registrarse:hover {
+    color: rgb(0, 0, 0);
+}
+
+.Registro {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}   
+
+.Registro nav {
+    position: relative;
+    top: auto;
+    right: auto;
+}
+
 header nav {
   position: absolute;
   right: 20px;
