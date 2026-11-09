@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Álbumes de Soundtracks</title>
+    <link rel="stylesheet" href="Categorias.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Soundtrack</h1>
+        <h2>Soundtracks inolvidables</h2>
+    </header>
+
+    <a href="Index.html" class="volver">← VOLVER AL INICIO</a>
+
+    <br/>
+
+    <main class="lista-albumes">
+
+        <div class="Album">
+            <img src="Imagenes/PortadaKungFuPanda.jpg" alt="Album Kung Fu Panda" width="180">
+            <h3>Kung Fu Panda (Original Motion Picture Soundtrack)</h3>
+            <p>Hans Zimmer, John Powell</p>
+            <p>$23.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+        
+        <div class="Album">
+            <img src="Imagenes/PortadaAliceMadnessReturn.jpg" alt="Album Alice Madness Return" width="180">
+            <h3>Alice: Madness Return (Original Videogame Soundtrack)</h3>
+            <p>Jason Tai, Marshall Crutcher, Chris Vrenna</p>
+            <p>$37.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+        
+        <div class="Album">
+            <img src="Imagenes/PortadaSonicAdventure.jpg" alt="Album Sonic Adventure" width="180">
+            <h3>Sonic Adventure (Original Videogame Soundtrack)</h3>
+            <p>Jun Senoue, Kenichi Tokoi, Fumie Kumatani, Tomoya Ohtani</p>
+            <p>$28.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+        
+        <div class="Album">
+            <img src="Imagenes/PortadaTrolls.jpg" alt="Album Trolls" width="180">
+            <h3>Trolls Band Together (Original Motion Picture Soundtrack)</h3>
+            <p>Trolls Band</p>
+            <p>$23.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+        
+        <div class="Album">
+            <img src="Imagenes/PortadaDeadOrAlive3.jpg" alt="Album Dead or Alive 3" width="180">
+            <h3>Dead or Alive 3 Original Sound Trax</h3>
+            <p>Makoto Hosoi, Takafumi Inamori, Ryo Koike</p>
+            <p>$50.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+        
+        <div class="Album">
+            <img src="Imagenes/PortadaCars.jpg" alt="Album Cars" width="180">
+            <h3>Cars (Original Motion Picture Soundtrack)</h3>
+            <p>John Powell, Randy Newman</p>
+            <p>$25.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+        
+        <div class="Album">
+            <img src="Imagenes/PortadaZelda.jpg" alt="Album The Legend of Zelda" width="180">
+            <h3>The Legend of Zelda: Ocarina of Time (Original Soundtrack)</h3>
+            <p>Koji Kondo</p>
+            <p>$40.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+        
+        <div class="Album">
+            <img src="Imagenes/PortadaRocky.jpg" alt="Album Rocky" width="180">
+            <h3>Rocky III: "Eye of the Tiger survivor" (Original Motion Picture Soundtrack)</h3>
+            <p>Frankie Sullivan, Jim Peterik</p>
+            <p>$30.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+        
+        <div class="Album">
+            <img src="Imagenes/PortadaSplatoon2.jpg" alt="Album Splatoon 2" width="180">
+            <h3>Splatoon 2 (Original Soundtrack)</h3>
+            <p>Toru Minegishi, Ryo Nagamatsu, Mitsuhiro Kida, Takahisa Yamamoto,Isami Yoshida</p>
+            <p>$60.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+        
+        <div class="Album">
+            <img src="Imagenes/PortadaIDV.jpg" alt="Album IDV" width="180">
+            <h3>Identity V Anniversary Sound Track(Call of the Abyss)</h3>
+            <p>Wang Jingfei, Tang Yuchen, Zhejiang, Lang Lang</p>
+            <p>$45.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+    </main>
+
+       
+<script>
+    document.querySelectorAll(".comprar").forEach(function(boton) {
+
+        boton.addEventListener("click", function() {
+
+            const album = boton.closest(".Album");
+
+            const datosDisco = {
+                titulo: album.querySelector("h3").textContent,
+                artista: album.querySelector("p").textContent,
+                imagen: album.querySelector("img").getAttribute("src")
+            };
+
+            localStorage.setItem("discoParaFicha", JSON.stringify(datosDisco));
+
+            window.location.href = "PaginaDeCompraBase.html";
+
+        });
+
+    });
+</script>
+
+</body>
+</html>

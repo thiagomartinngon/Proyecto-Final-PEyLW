@@ -1,17 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Tu Compra - Tienda de Música</title>
+
     <style>
-        /* Estilos oscuros que combinan con el diseño de sus carruseles */
         body {
-            background-color: #0b020f; 
+            background-color: #0b020f;
             color: white;
             font-family: Arial, sans-serif;
             padding: 40px;
             margin: 0;
         }
+
         .contenedor-carrito {
             max-width: 800px;
             margin: 0 auto;
@@ -20,13 +22,43 @@
             border-radius: 15px;
             border: 2px solid hwb(278 97% 0%);
         }
+
         .item-disco {
             display: flex;
             align-items: center;
             justify-content: space-between;
             border-bottom: 1px solid #444;
             padding: 15px 0;
+            gap: 15px;
         }
+
+        .item-disco img {
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .info-disco {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+
+        .btn-eliminar {
+            background-color: #ff3366;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn-eliminar:hover {
+            background-color: darkred;
+            transform: scale(1.1);
+        }
+
         .btn-vaciar {
             background: #ff3366;
             color: white;
@@ -35,7 +67,9 @@
             border-radius: 20px;
             cursor: pointer;
             font-weight: bold;
+            margin-top: 15px;
         }
+
         .btn-volver {
             display: inline-block;
             margin-top: 20px;
@@ -48,68 +82,115 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="contenedor-carrito">
+
         <h1>Productos en tu carrito</h1>
-        
-        <!-- JavaScript usará este div con este ID específico para dibujar los discos comprados -->
+
         <div id="lista-compra"></div>
 
-        <!-- Aquí se mostrará el total de dinero acumulado -->
         <div id="zona-total" style="margin-top: 30px; text-align: right;"></div>
-        
+
         <a href="Index.html" class="btn-volver">Volver a la tienda</a>
+
     </div>
 
     <script>
+
         function mostrarProductos() {
-            // Lee los discos guardados de la memoria de la PC
+
             const listaCarrito = JSON.parse(localStorage.getItem("carritoTienda")) || [];
+
             const contenedorLista = document.getElementById("lista-compra");
             const contenedorTotal = document.getElementById("zona-total");
-            
-            // Si no compraron nada aún
+
             if (listaCarrito.length === 0) {
+
                 contenedorLista.innerHTML = "<h3 style='text-align:center; opacity:0.6;'>Tu carrito está completamente vacío.</h3>";
+
                 contenedorTotal.innerHTML = "";
+
                 return;
             }
 
             contenedorLista.innerHTML = "";
+
             let granTotal = 0;
 
-            // Recorre cada disco guardado y arma su fila visual
-            listaCarrito.forEach(prod => {
+            listaCarrito.forEach((prod, indice) => {
+
                 let subtotal = prod.precio * prod.cantidad;
+
                 granTotal += subtotal;
 
                 contenedorLista.innerHTML += `
                     <div class="item-disco">
-                        <img src="${prod.imagen}" width="70" style="border-radius:5px; object-fit: cover;">
-                        <div style="flex-grow: 1; margin-left: 20px;">
-                            <h3 style="margin: 0 0 5px 0;">${prod.titulo}</h3>
-                            <p style="margin: 0; opacity: 0.7;">Cantidad: ${prod.cantidad}</p>
+
+                        <img src="${prod.imagen}" width="70">
+
+                        <div class="info-disco">
+
+                            <h3>${prod.titulo}</h3>
+
+                            <p>Cantidad: ${prod.cantidad}</p>
+
                         </div>
+
                         <h3>$${subtotal.toLocaleString('es-AR')}</h3>
+
+                        <button class="btn-eliminar" onclick="eliminarProducto(${indice})">
+                            X
+                        </button>
+
                     </div>
                 `;
+
             });
 
-            // Agrega el precio final y el botón para resetear la compra
             contenedorTotal.innerHTML = `
                 <h2>Total a pagar: $${granTotal.toLocaleString('es-AR')}</h2>
-                <button onclick="limpiarTodo()" class="btn-vaciar">Vaciar Carrito</button>
+
+                <button onclick="limpiarTodo()" class="btn-vaciar">
+                    Vaciar Carrito
+                </button>
             `;
+
         }
+
+
+        // Elimina solamente el producto seleccionado
+
+        function eliminarProducto(indice) {
+
+            let listaCarrito = JSON.parse(localStorage.getItem("carritoTienda")) || [];
+
+            listaCarrito.splice(indice, 1);
+
+            localStorage.setItem("carritoTienda", JSON.stringify(listaCarrito));
+
+            mostrarProductos();
+
+        }
+
+
+        // Elimina todos los productos
 
         function limpiarTodo() {
+
             localStorage.removeItem("carritoTienda");
-            mostrarProductos(); // Recarga la lista vacía en pantalla
+
+            mostrarProductos();
+
         }
 
-        // Corre la función automáticamente apenas el usuario entra a la página del carrito
+
+        // Muestra los productos al entrar al carrito
+
         mostrarProductos();
+
     </script>
+
 </body>
 </html>

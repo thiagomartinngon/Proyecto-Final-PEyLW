@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Álbumes de K-pop</title>
+    <link rel="stylesheet" href="Categorias.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>K-pop</h1>
+        <h2>K-pop Hits</h2>
+    </header>
+
+    <a href="Index.html" class="volver">← VOLVER AL INICIO</a>
+
+    <br/>
+
+    <main class="lista-albumes">
+
+        <div class="Album">
+            <img src="Imagenes/PortadaBlueValentine.jpg" alt="Album Blue Valentine" width="180">
+            <h3>Blue Valentine</h3>
+            <p>NMIXX</p>
+            <p>$35.000</p>
+            <button class="comprar">Comprar</button>
+        </div>
+
+        <div class="Album">
+            <img src="Imagenes/PortadaFOREVER1.jpg" alt="Album FOREVER 1" width="180">
+            <h3>FOREVER 1 - The 7th Album</h3>
+            <p>Girls' Generation</p>
+            <p>$40.000</p>
+            <button class="comprar">Comprar</button>
+        </div>
+
+        <div class="Album">
+            <img src="Imagenes/PortadaXX.jpg" alt="Album Loona" width="180">
+            <h3>[X X]</h3>
+            <p>LOONA</p>
+            <p>$55.000</p>
+            <button class="comprar">Comprar</button>
+        </div>
+
+        <div class="Album">
+            <img src="Imagenes/PortadaUnforgiven.jpg" alt="Album Unforgiven" width="180">
+            <h3>UNFORGIVEN</h3>
+            <p>LE SSERAFIM</p>
+            <p>$30.000</p>
+            <button class="comprar">Comprar</button>
+        </div>
+
+        <div class="Album">
+            <img src="Imagenes/PortadaLemonade.jpg" alt="Album Lemonade" width="180">
+            <h3>Lemonade - The 2nd Album</h3>
+            <p>aespa</p>
+            <p>$40.000</p>
+            <button class="comprar">Comprar</button>
+        </div>
+
+        <div class="Album">
+            <img src="Imagenes/PortadaEyesWideOpen.jpg" alt="Album Eyes Wide Open" width="180">
+            <h3>Eyes Wide Open</h3>
+            <p>TWICE</p>
+            <p>$35.000</p>
+            <button class="comprar">Comprar</button>
+        </div>
+
+        <div class="Album">
+            <img src="Imagenes/PortadaRedLight.jpg" alt="Album Red Light" width="180">
+            <h3>Red Light - The 3rd Album</h3>
+            <p>f(x)</p>
+            <p>$45.000</p>
+            <button class="comprar">Comprar</button>
+        </div>
+
+        <div class="Album">
+            <img src="Imagenes/PortadaTheRed.jpg" alt="Album The Red" width="180">
+            <h3>The Red - The 1st Album</h3>
+            <p>Red Velvet</p>
+            <p>$40.000</p>
+            <button class="comprar">Comprar</button>
+        </div>
+
+        <div class="Album">
+            <img src="Imagenes/PortadaPeekABoo.jpg" alt="Album Peek-A-Boo" width="180">
+            <h3>Perfect Velvet - The 2nd Album</h3>
+            <p>Red Velvet</p>
+            <p>$40.000</p>
+            <button class="comprar">Comprar</button>
+        </div>
+
+        <div class="Album">
+            <img src="Imagenes/PortadaTheWonderYears.jpg" alt="Album The Wonder Years" width="180">
+            <h3>The Wonder Years</h3>
+            <p>Wonder Girls</p>
+            <p>$60.000</p>
+            <button class="comprar">Comprar</button>
+        </div>
+
+    </main>
+
+    <script>
+        document.addEventListener("click", function(evento) {
+
+            if (evento.target.classList.contains("comprar")) {
+
+                const album = evento.target.closest(".Album");
+
+                const datosDisco = {
+                    titulo: album.querySelector("h3").textContent,
+                    artista: album.querySelector("p").textContent,
+                    imagen: album.querySelector("img").getAttribute("src"),
+                    precio: album.querySelectorAll("p")[1].textContent
+                };
+
+                localStorage.setItem(
+                    "discoParaFicha",
+                    JSON.stringify(datosDisco)
+                );
+
+                window.location.href = "PaginaDeCompraBase.html";
+            }
+
+        });
+    </script>
+
+</body>
+</html>

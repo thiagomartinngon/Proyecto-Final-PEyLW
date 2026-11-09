@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Álbumes de Jazz</title>
+    <link rel="stylesheet" href="Categorias.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Jazz</h1>
+        <h2>Joyitas del Jazz</h2>
+    </header>
+
+    <a href="Index.html" class="volver">← VOLVER AL INICIO</a>
+
+    <br/>
+
+    <main class="lista-albumes">
+
+        <div class="Album">
+            <img src="Imagenes/PortadaAMatterofTime.jpg" alt="Album A Matter of Time" width="180">
+            <h3>A Matter of Time: The Final Hour</h3>
+            <p>Laufey</p>
+            <p>$35.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+
+        <div class="Album">
+            <img src="Imagenes/PortadaBewitched.jpg" alt="Album Bewitched" width="180">
+            <h3>Bewitched: The Goddess Edition</h3>
+            <p>Laufey</p>
+            <p>$35.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+
+        <div class="Album">
+            <img src="Imagenes/PortadaKindofBlue.jpg" alt="Album Kind of Blue" width="180">
+            <h3>Kind of Blue</h3>
+            <p>Miles Davis</p>
+            <p>$45.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+
+        <div class="Album">
+            <img src="Imagenes/PortadaGetzGiliberto.jpg" alt="Album Getz/Gilberto" width="180">
+            <h3>Getz/Gilberto</h3>
+            <p>Stan Getz, João Gilberto</p>
+            <p>$50.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+
+        <div class="Album">
+            <img src="Imagenes/PortadaTheBestOfChickCorea.jpg" alt="Album The Best of Chick Corea" width="180">
+            <h3>The Best of Chick Corea</h3>
+            <p>Chick Corea</p>
+            <p>$40.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+
+        <div class="Album">
+            <img src="Imagenes/PortadaBossaHulaNova.jpg" alt="Album Bossa Hula Nova" width="180">
+            <h3>Bossa Hula Nova</h3>
+            <p>Lisa Ono</p>
+            <p>$50.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+
+        <div class="Album">
+            <img src="Imagenes/PortadaSeychelles.jpg" alt="Album SEYCHELLES" width="180">
+            <h3>SEYCHELLES</h3>
+            <p>Masayoshi Takanaka</p>
+            <p>$35.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+
+        <div class="Album">
+            <img src="Imagenes/PortadaBrasilianSkies.jpg" alt="Album Brasilian Skies" width="180">
+            <h3>Brasilian Skies</h3>
+            <p>Masayoshi Takanaka</p>
+            <p>$35.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+
+        <div class="Album">
+            <img src="Imagenes/PortadaMemoryBomb.jpg" alt="Album Memory Bomb" width="180">
+            <h3>Memory Bomb</h3>
+            <p>Kiefer</p>
+            <p>$50.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+
+        <div class="Album">
+            <img src="Imagenes/PortadaDedicatedToYou.jpg" alt="Album Dedicated to You" width="180">
+            <h3>Dedicated to You</h3>
+            <p>Branford Marsalis Quartet</p>
+            <p>$43.000</p>
+            <button class="comprar">Comprar</button>    
+        </div>
+    </main>
+
+    <script>
+    document.querySelectorAll(".comprar").forEach(function(boton) {
+
+        boton.addEventListener("click", function() {
+
+            const album = boton.closest(".Album");
+
+            const datosDisco = {
+                titulo: album.querySelector("h3").textContent,
+                artista: album.querySelector("p").textContent,
+                imagen: album.querySelector("img").getAttribute("src")
+            };
+
+            localStorage.setItem("discoParaFicha", JSON.stringify(datosDisco));
+
+            window.location.href = "PaginaDeCompraBase.html";
+
+        });
+
+    });
+</script>
+</body>
+</html>

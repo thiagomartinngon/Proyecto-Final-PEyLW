@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("Estilo Imagenes/FondoPaginaIndex.svg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Georgia, serif;
+}
+
+/* ENCABEZADO */
+
+header {
+    background-color: rgba(202, 0, 101, 0.8);
+    padding: 25px;
+    text-align: center;
+    color: rgb(255, 200, 0);
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header h2 {
+    margin-top: 10px;
+}
+
+/* BOTÓN VOLVER */
+
+.volver {
+    display: inline-block;
+    margin: 25px;
+    padding: 15px 30px;
+
+    background-color: rgba(89, 0, 158, 0.8);
+    color: white;
+
+    border: 2px solid rgb(255, 207, 48);
+    border-radius: 15px;
+
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+
+    box-shadow: 4px 4px 0px black;
+
+    transition: 0.3s;
+    
+}
+
+.volver:hover {
+    background-color: rgba(89, 0, 158, 0.8);
+    color: white;
+
+    border-color: rgb(255, 200, 0);
+
+    transform: translateY(-4px);
+    box-shadow: 5px 7px 0px black;
+}
+
+/* TÍTULO */
+
+.titulo-rock {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: black 4px 4px 4px;
+    margin: 25px;
+}
+
+/* CONTENEDOR DE ÁLBUMES */
+
+.lista-albumes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+    width: 95%;
+    margin: auto;
+}
+
+/* TARJETAS DE ÁLBUMES */
+
+.Album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 7px;
+
+    width: 100%;
+    padding: 12px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid black;
+    border-radius: 18px;
+
+    transition: transform 0.3s;
+}
+
+.Album:hover {
+    transform: scale(1.02);
+}
+
+.Album img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* INFORMACIÓN */
+
+.informacion-album {
+    flex: 1;
+}
+
+.informacion-album h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.informacion-album p {
+    margin-bottom: 10px;
+}
+
+/* LISTA DE CANCIONES */
+
+.informacion-album ol {
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+.informacion-album li {
+    margin-bottom: 6px;
+}
+
+/* PRECIO */
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* BOTÓN COMPRAR */
+
+.comprar {
+    background-color: rgb(202, 0, 101);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+

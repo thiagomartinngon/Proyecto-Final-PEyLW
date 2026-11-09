@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Álbumes de Rock</title>
+    <link rel="stylesheet" href="Categorias.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Rock</h1>
+        <h2>Los mejores álbumes del Rock</h2>
+    </header>
+
+    <a href="Index.html" class="volver">← VOLVER AL INICIO</a>
+    <br/>
+    <main class="lista-albumes">
+
+        <div class="Album">
+
+            <img src="Imagenes/PortadaOktubre.jpg" alt="Album Oktubre" width="180">
+
+            <h3>Oktubre</h3>
+            <p>Patricio Rey y Sus Redonditos de Ricota</p>
+            <p>$16.000</p>
+            <button class="comprar">Comprar</button>
+        </div>
+        
+        <div class="Album">
+            <img src="Imagenes/PortadaLoboSuelto.jpg" alt="Album Lobo Suelto" width="180">
+
+            <h3>Lobo Suelto</h3>
+            <p>Patricio Rey y Sus Redonditos de Ricota</p>
+            <p>$16.000</p>
+            <button class="comprar">Comprar</button>
+
+    </div>
+    
+    <div class="Album">
+        <img src="Imagenes/PortadaAfterChabon.jpg" alt="Album After Chabon" width="180">
+
+        <h3>After Chabon</h3>
+        <p>Sumo</p>
+        <h3>Canciones:</h3>
+        <p>$28.000</p>
+        <button class="comprar">Comprar</button>    
+    </div>
+    
+    <div class="Album">
+        <img src="Imagenes/PortadaBocanada.jpg" alt="Album Bocanada" width="180">
+
+        <h3>Bocanada</h3>
+        <p>Gustavo Cerati</p>
+        <h3>Canciones:</h3>
+        <p>$26.000</p>
+        <button class="comprar">Comprar</button>    
+    </div>
+    
+    <div class="Album">
+        <img src="Imagenes/PortadaPelusonOfMilk.jpg" alt="Album Peluson of Milk" width="180">
+
+        <h3>Peluson of Milk</h3>
+        <p>Luis Alberto Spinetta</p>
+        <p>$35.000</p>
+        <button class="comprar">Comprar</button>    
+    </div>
+    
+    <div class="Album">
+        <img src="Imagenes/PortadaTheCure.jpg" alt="Album The Cure" width="180">
+        <h3>The Cure</h3>
+        <p>The Cure</p>
+        <p>$40.000</p>
+        <button class="comprar">Comprar</button>
+    </div>
+    
+    <div class="Album">
+        <img src="Imagenes/PortadaRiot.jpg" alt="Album Riot" width="180">
+        <h3>Riot!</h3>
+        <p>Paramore</p>
+        <p>$30.000</p>
+        <button class="comprar">Comprar</button>
+    </div>
+    
+    <div class="Album">
+        <img src="Imagenes/PortadaAmericanIdiot.jpg" alt="Album American Idiot" width="180">
+        <h3>American Idiot</h3>
+        <p>Green Day</p>
+        <p>$25.000</p>
+        <button class="comprar">Comprar</button>
+    </div>
+    
+    <div class="Album">
+        <img src="Imagenes/PortadaLetGo.jpg" alt="Album Let Go" width="180">
+        <h3>Let Go</h3>
+        <p>Avril Lavigne</p>
+        <p>$32.000</p>
+        <button class="comprar">Comprar</button>
+    </div>
+    
+    <div class="Album">
+        <img src="Imagenes/PortadaWeezer.jpg" alt="Album Weezer" width="180">
+        <h3>Weezer</h3>
+        <p>Weezer</p>
+        <p>$28.000</p>
+        <button class="comprar">Comprar</button>
+    </div>
+    </main>
+
+       
+<script>
+    document.querySelectorAll(".comprar").forEach(function(boton) {
+
+        boton.addEventListener("click", function() {
+
+            const album = boton.closest(".Album");
+
+            const datosDisco = {
+                titulo: album.querySelector("h3").textContent,
+                artista: album.querySelector("p").textContent,
+                imagen: album.querySelector("img").getAttribute("src")
+            };
+
+            localStorage.setItem("discoParaFicha", JSON.stringify(datosDisco));
+
+            window.location.href = "PaginaDeCompraBase.html";
+
+        });
+
+    });
+</script>
+
+</body>
+</html>

@@ -46,6 +46,23 @@
             border-radius: 20px;
             font-weight: bold;
         }
+        .botonEliminar {
+        background-color: #ff3366;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-left: 15px;
+        }
+
+        .botonEliminar:hover {
+            background-color: #cc0033;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
@@ -64,12 +81,11 @@
 
     <script>
         function mostrarProductos() {
-            
+
             const listaCarrito = JSON.parse(localStorage.getItem("carritoTienda")) || [];
             const contenedorLista = document.getElementById("lista-compra");
             const contenedorTotal = document.getElementById("zona-total");
-            
-         
+
             if (listaCarrito.length === 0) {
                 contenedorLista.innerHTML = "<h3 style='text-align:center; opacity:0.6;'>Tu carrito está completamente vacío.</h3>";
                 contenedorTotal.innerHTML = "";
@@ -79,28 +95,44 @@
             contenedorLista.innerHTML = "";
             let granTotal = 0;
 
-          
-            listaCarrito.forEach(prod => {
+            listaCarrito.forEach((prod, indice) => {
+
                 let subtotal = prod.precio * prod.cantidad;
                 granTotal += subtotal;
 
                 contenedorLista.innerHTML += `
                     <div class="item-disco">
+
                         <img src="${prod.imagen}" width="70" style="border-radius:5px; object-fit: cover;">
+
                         <div style="flex-grow: 1; margin-left: 20px;">
                             <h3 style="margin: 0 0 5px 0;">${prod.titulo}</h3>
                             <p style="margin: 0; opacity: 0.7;">Cantidad: ${prod.cantidad}</p>
                         </div>
+
                         <h3>$${subtotal.toLocaleString('es-AR')}</h3>
+
+                        <button class="botonEliminar" onclick="eliminarProducto(${indice})">X</button>
+
                     </div>
                 `;
             });
 
-          
             contenedorTotal.innerHTML = `
                 <h2>Total a pagar: $${granTotal.toLocaleString('es-AR')}</h2>
                 <button onclick="limpiarTodo()" class="btn-vaciar">Vaciar Carrito</button>
             `;
+        }
+        
+        function eliminarProducto(indice) {
+
+            const listaCarrito = JSON.parse(localStorage.getItem("carritoTienda")) || [];
+
+            listaCarrito.splice(indice, 1);
+
+            localStorage.setItem("carritoTienda", JSON.stringify(listaCarrito));
+
+            mostrarProductos();
         }
 
         function limpiarTodo() {
