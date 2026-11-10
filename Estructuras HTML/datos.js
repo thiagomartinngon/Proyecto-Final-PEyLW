@@ -5,9 +5,9 @@ const misAlbumes = [
     artista: "Patricio Rey y sus Redonditos de Ricota",
     imagen: "Imagenes/PortadaOktubre.jpg",
     descripcion: "Oktubre es el segundo álbum de estudio de Patricio Rey y sus Redonditos de Ricota, publicado en 1986.",
-    tracklist: ["Fuegos de octubre", "Preso en mi ciudad", "Música para pastillas", "Semen-Up", "Divina TV Führer"],
+    tracklist: ["Fuegos de octubre", "Preso en mi ciudad", "Música para pastillas", "Semen-Up", "Divina TV Führer", "Motor Psico", "Ji Ji Ji", "Canción de Naufragios", "Ya Nadie Va a Escuchar Tu Remera"],
     precioCD: 16000,
-    precioVinilo: 28000,
+    precioVinilo: 65000,
     precioCasete: 9000
   },
   {
@@ -16,9 +16,9 @@ const misAlbumes = [
     artista: "Patricio Rey y sus Redonditos de Ricota",
     imagen: "Imagenes/PortadaLoboSuelto.jpg",
     descripcion: "Lobo Suelto es un disco emblemático lanzado en la década de los 90.",
-    tracklist: ["Rock para los dientes", "Sorpresa de Shangai", "Semen-Up (En vivo)"],
+    tracklist: ["Invocación", "Rock para el Negro Atila", "Sorpresa de Shangai", "Shopping Disco-Zen", "Un Ángel para Tu Soledad", "Buenas Noticias", "Susanita", "Capricho Magyar", "Espejismo", "Gran Lady", "La Hija del Fletero", "El Lobo Caído", "Sushi"],
     precioCD: 16000,
-    precioVinilo: 28000,
+    precioVinilo: 65000,
     precioCasete: 9000
   },
   {
@@ -27,9 +27,9 @@ const misAlbumes = [
     artista: "Patricio Rey y sus Redonditos de Ricota",
     imagen: "Imagenes/PortadaGulp.jpg",
     descripcion: "El histórico y autogestivo álbum de estudio debut de Los Redondos, lanzado originalmente en 1985.",
-    tracklist: ["Barbazul hacia el amor letal", "La bestia pop", "Roto y mal parado", "El infierno está encantador"],
+    tracklist: ["Barbazul Versus el Amor Letal", "La Bestia Pop", "Roto y Mal Parado", "Pierre, el Vitricida", "Unos Pocos Peligros Sensatos", "Yo No Me Caí del Cielo", "Te Voy a Atornillar", "Superlógico", "Ñam Fri Fruli Fali Fru", "El Infierno Está Encantador Esta Noche", "Criminal Mambo"],
     precioCD: 16000,
-    precioVinilo: 28000,
+    precioVinilo: 65000,
     precioCasete: 9000
   },
   {
@@ -38,9 +38,9 @@ const misAlbumes = [
     artista: "Sumo",
     imagen: "Imagenes/PortadaDivididosPorLaFelicidad.jpg",
     descripcion: "El influyente álbum debut de Sumo lanzado en 1985, introducing el reggae y post-punk al rock argentino.",
-    tracklist: ["La rubia tarada", "Mula plateada", "No acabes", "Reggae de paz y amor"],
+    tracklist: ["La Rubia Tarada", "Mula Plateada", "No Acabes", "Regtest", "El Reggae de Paz y Amor", "Debede", "Mejor No Hablar de Ciertas Cosas", "Divididos por la Felicidad", "No Duermas Más", "Kaya"],
     precioCD: 26000,
-    precioVinilo: 45500,
+    precioVinilo: 55000,
     precioCasete: 14560
   },
   {
@@ -49,9 +49,9 @@ const misAlbumes = [
     artista: "Sumo",
     imagen: "Imagenes/PortadaAfterChabon.jpg",
     descripcion: "El tercer y último álbum de estudio grabado por Sumo en 1987 antes del fallecimiento de Luca Prodan.",
-    tracklist: ["Crua Chan", "No tan distintos", "Banderitas y globos", "Mañana en el Abasto"],
+   tracklist: ["Crua Chan", "No Tan Distintos", "Banderitas y Globos", "Mañana en el Abasto", "Hola Frank", "Ojos de Terciopelo", "Lo Quiero Ya", "La Gota en el Ojo", "El Cieguito Volador", "No Te Pongas Azul", "Noche de Paz", "Percussion Baby"],
     precioCD: 28000,
-    precioVinilo: 49000,
+    precioVinilo: 50500,
     precioCasete: 15680
   },
   {
@@ -60,7 +60,7 @@ const misAlbumes = [
     artista: "Gustavo Cerati",
     imagen: "Imagenes/PortadaBocanada.jpg",
     descripcion: "La aclamada obra maestra solista de Gustavo Cerati de 1999, tras la separación de Soda Stereo, mezclando rock con electrónica.",
-    tracklist: ["Tabú", "Engaña", "Bocanada", "Puente", "Beautiful"],
+    tracklist: ["Tabú", "Engaña", "Bocanada", "Puente", "Río Babel", "Beautiful", "Perdonar es divino", "Verbo carne", "Raíz", "Y si el humo está en foco...", "Paseo inmoral", "Aquí & Ahora (Los primeros tres minutos)", "Aquí & Ahora (Y después)", "Alma", "Balsa"],
     precioCD: 26000,
     precioVinilo: 45500,
     precioCasete: 14560
@@ -71,7 +71,7 @@ const misAlbumes = [
     artista: "Luis Alberto Spinetta",
     imagen: "Imagenes/PortadaPelusonOfMilk.jpg",
     descripcion: "El décimo álbum solista de Spinetta lanzado en 1991, gestado en una etapa muy íntima que incluye el clásico 'Seguir viviendo sin tu amor'.",
-    tracklist: ["Seguir viviendo sin tu amor", "Lago de forma de árbol", "Grisel", "Bombo de bambú"],
+    tracklist: ["Seguir viviendo sin tu amor", "Lago de forma mía", "Ganges", "La montaña", "Panacea", "Domo tu", "Cada luz", "Bomba azul", "Cielo de ti", "Cruzarás", "Hombre de lata", "Jilguero", "Ella bailó (Love of My Life)", "Pies de atril", "Dime la forma"],
     precioCD: 35000,
     precioVinilo: 61250,
     precioCasete: 19600
@@ -82,7 +82,7 @@ const misAlbumes = [
     artista: "The Cure",
     imagen: "Imagenes/PortadaTheCure.jpg",
     descripcion: "El duodécimo álbum homónimo lanzado por la mítica banda británica de rock gótico y post-punk liderada por Robert Smith.",
-    tracklist: ["Lost", "Labyrinth", "Before Three", "The End of the World"],
+    tracklist: ["Lost", "Labyrinth", "Before Three", "Truth Goodness and Beauty", "The End of the World", "Anniversary", "Us or Them", "alt.end", "(I Don't Know What's Going) On", "Taking Off", "Never", "The Promise", "Going Nowhere"],
     precioCD: 40000,
     precioVinilo: 70000,
     precioCasete: 22400
@@ -93,7 +93,7 @@ const misAlbumes = [
     artista: "Paramore",
     imagen: "Imagenes/PortadaRiot.jpg",
     descripcion: "El explosivo segundo disco de estudio de Paramore que los consagró como líderes mundiales del Pop-Punk de los 2000.",
-    tracklist: ["For a Pessimist, I'm Pretty Optimistic", "That's What You Get", "Hallelujah", "Misery Business", "Crushcrushcrush"],
+    tracklist: ["For a Pessimist, I'm Pretty Optimistic", "That's What You Get", "Hallelujah", "Misery Business", "When It Rains", "Let the Flames Begin", "Miracle", "crushcrushcrush", "We Are Broken", "Fences", "Born for This"],
     precioCD: 30000,
     precioVinilo: 52500,
     precioCasete: 16800
@@ -104,7 +104,7 @@ const misAlbumes = [
     artista: "Green Day",
     imagen: "Imagenes/PortadaAmericanIdiot.jpg",
     descripcion: "La masiva e influyente ópera punk-rock ganadora del Grammy lanzada por Green Day en el año 2004.",
-    tracklist: ["American Idiot", "Jesus of Suburbia", "Holiday", "Boulevard of Broken Dreams", "Wake Me Up When September Ends"],
+    tracklist: ["American Idiot", "Jesus of Suburbia", "Holiday", "Boulevard of Broken Dreams", "Are We the Waiting", "St. Jimmy", "Give Me Novacaine", "She's a Rebel", "Extraordinary Girl", "Letterbomb", "Wake Me Up When September Ends", "Homecoming", "Whatsername"],
     precioCD: 25000,
     precioVinilo: 43750,
     precioCasete: 14000
@@ -115,7 +115,7 @@ const misAlbumes = [
     artista: "Avril Lavigne",
     imagen: "Imagenes/PortadaLetGo.jpg",
     descripcion: "El recordado álbum debut del año 2002 que posicionó a Avril Lavigne como el máximo referente del Pop-Rock y Pop-Skater femenino.",
-    tracklist: ["Losing Grip", "Complicated", "Sk8er Boi", "I'm with You", "Mobile"],
+    tracklist: ["Losing Grip", "Complicated", "Sk8er Boi", "I'm with You", "Mobile", "Unwanted", "Tomorrow", "Anything but Ordinary", "My World", "Nobody's Fool", "Too Much to Ask", "Naked"],
     precioCD: 32000,
     precioVinilo: 56000,
     precioCasete: 17920
@@ -126,7 +126,7 @@ const misAlbumes = [
     artista: "Weezer",
     imagen: "Imagenes/PortadaWeezer.jpg",
     descripcion: "El homónimo e icónico 'Blue Album' de Weezer de 1994, pilar fundamental del Rock Alternativo y el Power Pop.",
-    tracklist: ["My Name Is Jonas", "Buddy Holly", "Undone - The Sweater Song", "Say It Ain't So"],
+    tracklist: ["My Name Is Jonas", "No One Else", "The World Has Turned and Left Me Here", "Buddy Holly", "Undone – The Sweater Song", "Surf Wax America", "Say It Ain't So", "In the Garage", "Holiday", "Only in Dreams"],
     precioCD: 28000,
     precioVinilo: 49000,
     precioCasete: 15680
@@ -137,7 +137,7 @@ const misAlbumes = [
     artista: "Alanis Morissette",
     imagen: "Imagenes/PortadaJaggedLittlePill.jpg",
     descripcion: "Lanzado en 1995, la aclamada y cruda obra maestra de rock alternativo que barrió los premios Grammy de su época.",
-    tracklist: ["All I Really Want", "You Oughta Know", "Hand in My Pocket", "Ironic", "You Learn"],
+    tracklist: ["All I Really Want", "You Oughta Know", "Perfect", "Hand in My Pocket", "Right Through You", "Forgiven", "You Learn", "Head over Feet", "Mary Jane", "Ironic", "Not the Doctor", "Wake Up"],
     precioCD: 30000,
     precioVinilo: 52500,
     precioCasete: 16800
@@ -148,7 +148,7 @@ const misAlbumes = [
     artista: "Gorillaz",
     imagen: "Imagenes/PortadaGorillaz.jpg",
     descripcion: "El revolucionario álbum debut homónimo de la banda virtual creada por Damon Albarn y Jamie Hewlett en 2001.",
-    tracklist: ["Re-Hash", "Tomorrow Comes Today", "New Genius", "Clint Eastwood", "19-2000"],
+    tracklist: ["Re-Hash", "5/4", "Tomorrow Comes Today", "New Genious (Brother)", "Clint Eastwood", "Man Research (Clapper)", "Punk", "Sound Check (Gravity)", "Double Bass", "Rock the House", "19-2000", "Latin Simone (Que Pasa Contigo)", "Starshine", "Slow Country", "M1 A1"],
     precioCD: 35000,
     precioVinilo: 61250,
     precioCasete: 19600
@@ -156,10 +156,10 @@ const misAlbumes = [
   {
     id: "fallen",
     titulo: "Fallen",
-    artista: "Evanescence",
-    imagen: "Imagenes/PortadaFallen.jpg",
+      artista: "Evanescence",
+      imagen: "Imagenes/PortadaFallen.jpg",
     descripcion: "El multipremiado álbum debut lanzado en 2003, fusionando a la perfección el Metal Alternativo y el Rock Gótico.",
-    tracklist: ["Going Under", "Bring Me to Life", "Everybody's Fool", "My Immortal"],
+    tracklist: ["Going Under", "Bring Me to Life", "Everybody's Fool", "My Immortal", "Haunted", "Tourniquet", "Imaginary", "Taking Over Me", "Hello", "My Last Breath", "Whisper"],
     precioCD: 30000,
     precioVinilo: 52500,
     precioCasete: 16800
@@ -168,9 +168,9 @@ const misAlbumes = [
     id: "you-seem-pretty-sad",
     titulo: "You Seem Pretty Sad For a Girl So in Love",
     artista: "Olivia Rodrigo",
-    imagen: "Imagenes/PortadaYouSeemPrettySad.jpg",
+    imagen: "Imagenes/PortadaOliviaRodrigo.jpg",
     descripcion: "Edición especial que reúne baladas emotivas y de rock alternativo de la talentosa Olivia Rodrigo.",
-    tracklist: ["drivers license", "deja vu", "good 4 u", "traitor"],
+    tracklist: ["drop dead", "stupid song", "honeybee", "maggots for brains", "u + me = <3", "my way", "purple", "the cure", "begged", "what's wrong with me", "less", "expectations", "cigarette smoke"],
     precioCD: 30000,
     precioVinilo: 52500,
     precioCasete: 16800
@@ -181,7 +181,7 @@ const misAlbumes = [
     artista: "Olivia Rodrigo",
     imagen: "Imagenes/PortadaGuts.jpg",
     descripcion: "El aclamado segundo álbum de Olivia Rodrigo, balanceando un potente sonido pop-punk con letras crudas.",
-    tracklist: ["all-american bitch", "bad idea right?", "vampire", "get him back!"],
+    tracklist: ["all-american bitch", "bad idea right?", "vampire", "lacy", "ballad of a homeschooled girl", "making the bed", "logical", "get him back!", "love is embarrassing", "the grudge", "pretty isn't pretty", "teenage dream"],
     precioCD: 23000,
     precioVinilo: 40250,
     precioCasete: 12880
@@ -192,7 +192,7 @@ const misAlbumes = [
     artista: "Mitski",
     imagen: "Imagenes/PortadaLaurelHell.jpg",
     descripcion: "Sexto álbum de Mitski, donde explora texturas e influencias de synth-pop nostálgico de los años 80.",
-    tracklist: ["Valentine, Texas", "Working for the Knife", "Stay Soft", "The Only Heartbreaker"],
+    tracklist: ["Valentine, Texas", "Working for the Knife", "Stay Soft", "Everyone", "Heat Lightning", "The Only Heartbreaker", "Love Me More", "There's Nothing Left for You", "Should've Been Me", "I Guess", "That's Our Lamp"],
     precioCD: 40000,
     precioVinilo: 70000,
     precioCasete: 22400
@@ -203,7 +203,7 @@ const misAlbumes = [
     artista: "PinkPantheress",
     imagen: "Imagenes/PortadaFancyThat.jpg",
     descripcion: "Producción de PinkPantheress repleta de ritmos drum and bass mezclados con melodías pop pegadizas.",
-    tracklist: ["Fancy", "Attracted To You", "Boy's a Liar", "Pain"],
+    tracklist: ["Illegal", "Girl Like Me", "Tonight", "Stars", "Intermission", "Noises", "Nice to Know You", "Stateside", "Romeo"],
     precioCD: 28000,
     precioVinilo: 49000,
     precioCasete: 15680
@@ -214,7 +214,7 @@ const misAlbumes = [
     artista: "Sabrina Carpenter",
     imagen: "Imagenes/PortadaMansBestFriend.jpg",
     descripcion: "Edición alternativa especial que destaca las melódicas y potentes composiciones vocales de Sabrina Carpenter.",
-    tracklist: ["Skin", "Fast Times", "Vicious", "Read your Mind"],
+    tracklist: ["Manchild", "Tears", "My Man on Willpower", "Sugar Talking", "We Almost Broke Up Again Last Night", "Nobody's Son", "Never Getting Laid", "When Did You Get Hot?", "Go Go Juice", "Don't Worry I'll Make You Worry", "House Tour", "Goodbye"],
     precioCD: 23000,
     precioVinilo: 40250,
     precioCasete: 12880
@@ -225,7 +225,7 @@ const misAlbumes = [
     artista: "Todd Malcolm",
     imagen: "Imagenes/PortadaSweetBoy.jpg",
     descripcion: "Un lanzamiento independiente con un estilo indie pop e instrumentación íntima y directa.",
-    tracklist: ["Sweet Boy", "Growing Pains", "Summer Rain", "October"],
+    tracklist: ["Earrings", "Roommates", "On My Shoulder", "Thailand", "Ladygirl", "Sweet Boy", "Rodrick Rules", "4Me 4Me", "Art House", "Sore Throat", "Rockstar Boyfriend", "New Friends", "Accutane", "Hot in NY", "Pillow", "Mr. Incorrect"],
     precioCD: 35000,
     precioVinilo: 61250,
     precioCasete: 19600
@@ -236,8 +236,7 @@ const misAlbumes = [
     artista: "Katy Perry",
     imagen: "Imagenes/PortadaOneOfTheBoys.jpg",
     descripcion: "El histórico álbum debut pop-rock de Katy Perry de 2008, que incluye hits globales masivos.",
-    tracklist: ["One of the Boys", "I Kissed a Girl", "Waking Up in Vegas", "Thinking of You", "Hot n Cold"],
-    precioCD: 30000,
+    tracklist: ["One of the Boys", "I Kissed a Girl", "Waking Up in Vegas", "Thinking of You", "Mannequin", "Ur So Gay", "Hot N Cold", "If You Can Afford Me", "Lost", "Self Inflicted", "I'm Still Breathing", "Fingerprints"],
     precioVinilo: 52500,
     precioCasete: 16800
   },
@@ -247,7 +246,7 @@ const misAlbumes = [
     artista: "Britney Spears",
     imagen: "Imagenes/PortadaBabyOneMoreTime.jpg",
     descripcion: "Publicado en 1999, es el legendario álbum debut de la Princesa del Pop que cambió la cultura musical global.",
-    tracklist: ["...Baby One More Time", "(You Drive Me) Crazy", "Sometimes", "Born to Make You Happy"],
+    tracklist: ["...Baby One More Time", "(You Drive Me) Crazy", "Sometimes", "Soda Pop", "Born to Make You Happy", "From the Bottom of My Broken Heart", "I Will Be There", "I Will Still Love You", "Thinkin' About You", "E-Mail My Heart", "The Beat Goes On"],
     precioCD: 28000,
     precioVinilo: 49000,
     precioCasete: 15680
@@ -260,7 +259,7 @@ const misAlbumes = [
     artista: "Lady Gaga",
     imagen: "Imagenes/PortadaBornThisWay.jpg",
     descripcion: "El icónico álbum de estudio de Lady Gaga, un poderoso manifiesto pop y techno de libertad e identidad.",
-    tracklist: ["Marry the Night", "Born This Way", "Government Hooker", "Judas", "The Edge of Glory"],
+    tracklist: ["Marry the Night", "Born This Way", "Government Hooker", "Judas", "Americano", "Hair", "Scheiße", "Bloody Mary", "Bad Kids", "Highway Unicorn (Road to Love)", "Heavy Metal Lover", "Electric Chapel", "Yoü and I", "The Edge of Glory"],
     precioCD: 35000,
     precioVinilo: 61250,
     precioCasete: 19600
@@ -271,7 +270,7 @@ const misAlbumes = [
     artista: "ADÉLA",
     imagen: "Imagenes/PortadaPrima.jpg",
     descripcion: "Lanzamiento pop contemporáneo que destaca por sus arreglos de sintetizadores y prolija producción vocal.",
-    tracklist: ["Intro", "Prima", "Contigo", "Reflejo"],
+    tracklist: ["KGB", "Nicole Kidman", "I'm The Man", "Boys", "Red Bottoms", "Hitachi", "Fantasize", "Starving Artist", "Marijuana", "Therapy", "Ain't In LA"],
     precioCD: 23000,
     precioVinilo: 40250,
     precioCasete: 12880
@@ -282,7 +281,7 @@ const misAlbumes = [
     artista: "Shakira",
     imagen: "Imagenes/PortadaOralFixation2.jpg",
     descripcion: "Exitosa producción en inglés de Shakira que la consolidó globalmente gracias a sus ritmos e instrumentación.",
-    tracklist: ["How Do You Do", "Don't Bother", "Illegal", "Hips Don't Lie", "Animal City"],
+    tracklist: ["How Do You Do", "Illegal (feat. Carlos Santana)", "Hips Don't Lie (feat. Wyclef Jean)", "Animal City", "Don't Bother", "The Day and the Time (feat. Gustavo Cerati)", "Dreams for Plans", "Hey You", "Your Embrace", "Costume Makes the Clown", "Something", "Timor", "La Tortura (Alternate Version) (feat. Alejandro Sanz)", "Hips Don't Lie (En Español) (feat. Wyclef Jean)", "Don't Bother (jrsnchz Radio Mix)", "Illegal (Ali Dee Radio Remix)"],
     precioCD: 23000,
     precioVinilo: 40250,
     precioCasete: 12880
@@ -293,7 +292,7 @@ const misAlbumes = [
     artista: "Bad Bunny",
     imagen: "Imagenes/PortadaDebiTirarMasFotos.jpg",
     descripcion: "Edición conceptual de colección que recopila sencillos urbanos del popular artista puertorriqueño.",
-    tracklist: ["Fotos", "Amanece", "Un Preview", "Monaco"],
+    tracklist: ["Debí Tirar Más Fotos", "La Mudanza", "Bokete", "Ketu Tecré", "Velda", "El Clúb", "Weltita", "Turista", "Café con Ron", "Pitorro de Coco", "Lo Que Le Pasó a Hawaii", "Eoo", "DtMF", "La Cartera", "El Apagón", "Coco Chanel"],
     precioCD: 23000,
     precioVinilo: 40250,
     precioCasete: 12880
@@ -304,7 +303,7 @@ const misAlbumes = [
     artista: "Babasónicos",
     imagen: "Imagenes/PortadaMucho.jpg",
     descripcion: "El noveno disco de Babasónicos, variando con un sonido pop rock directo, sintético y de canciones cortas.",
-    tracklist: ["Yo anuncio", "Pijamas", "Microdancing", "Las demás", "Cuello"],
+    tracklist: ["Yo anuncio", "Pijamas", "Escamas", "Cuello rojo", "Cómo eran las cosas", "Microdancing", "Las demás", "Estoy rabioso", "Nosotros", "El ídolo"],
     precioCD: 23000,
     precioVinilo: 40250,
     precioCasete: 12880
@@ -315,7 +314,7 @@ const misAlbumes = [
     artista: "Miranda!",
     imagen: "Imagenes/PortadaElTemploDelPop.jpg",
     descripcion: "El gran disco recopilatorio lanzado por Miranda! en 2008, un compendio esencial del electropop argentino.",
-    tracklist: ["Perfecta", "Don", "Yo te diré", "El profe", "Enamorada"],
+    tracklist: ["Perfecta", "Chicas", "Enamorada", "Don", "Yo Te Diré", "Traición", "Bailarina", "Prisionero", "Imán", "Hola", "El Profe", "Romix", "Otra Vez (Vivo en el Gran Rex 2005)", "Mi Propia Vida", "Uno los Dos", "Tu Juego", "Vete de Aquí", "Navidad", "Quereme... Tengo Frío", "Mirandamix (Oíd Mortales Mix)"],
     precioCD: 23000,
     precioVinilo: 40250,
     precioCasete: 12880
@@ -326,7 +325,7 @@ const misAlbumes = [
     artista: "Miranda!",
     imagen: "Imagenes/PortadaSinRestricciones.jpg",
     descripcion: "El icónico segundo álbum de estudio que los consagró gracias a hits masivos e inolvidables del pop nacional.",
-    tracklist: ["Yo te diré", "Don", "Quiero", "Navidad", "Traición"],
+    tracklist: ["Yo Te Diré", "Don", "Quiero", "Vuelve a Ti", "El Profe", "Otra Vez", "Tu Gurú", "Hoy", "El Agente", "Navidad", "Traición", "Uno los Dos"],
     precioCD: 23000,
     precioVinilo: 40250,
     precioCasete: 12880
@@ -338,7 +337,7 @@ const misAlbumes = [
     artista: "Hans Zimmer, John Powell",
     imagen: "Imagenes/PortadaKungFuPanda.jpg",
     descripcion: "Fusión maestra de orquesta occidental e instrumentos tradicionales chinos compuesta por Hans Zimmer y John Powell.",
-    tracklist: ["Hero", "Let The Tournament Begin", "The Dragon Scroll", "Oogway Ascends", "Kung Fu Fighting"],
+    tracklist: ["Hero", "Let the Tournament Begin", "Dragon Warrior Is Among Us", "Tai Lung Escapes", "Peach Tree of Wisdom", "Accu-Flashback", "Impersonating Shifu", "Sacred Pool of Tears", "Training Po", "The Bridge", "Shifu Faces Tai Lung", "The Dragon Scroll", "Po vs. Tai Lung", "Dragon Warrior Rises", "Panda Po", "Oogway Ascends", "Kung Fu Fighting"],
     precioCD: 23000,
     precioVinilo: 40250,
     precioCasete: 12880
@@ -349,7 +348,7 @@ const misAlbumes = [
     artista: "Jason Tai, Marshall Crutcher, Chris Vrenna",
     imagen: "Imagenes/PortadaAliceMadnessReturns.jpg",
     descripcion: "Música gótica, retorcida y melancólica construida con juguetes mecánicos y cuerdas desgarradoras.",
-    tracklist: ["Alice: Madness Returns Theme", "Vale of Tears", "Asylum", "Card Castles in the Sky"],
+    tracklist: ["Main Theme", "Vale of Tears", "Wasteland", "Hatter", "Madness", "Jack Splatter", "Sunken Crypt", "Radcliffe's Fate", "Jade", "Shadown Scroll", "Card Castles in the Sky", "Queensland", "The Asylum", "Hyde Park", "Fort Resistance", "Dollhouses", "Off With Her Head", "Pulling Strings", "Moorgate Station", "Surreal", "Into Londerland", "Outro"],
     precioCD: 37000,
     precioVinilo: 64750,
     precioCasete: 20720
@@ -413,7 +412,7 @@ const misAlbumes = [
     id: "rocky-iii-ost",
     titulo: "Rocky III: \"Eye of the Tiger survivor\" (Original Motion Picture Soundtrack)",
     artista: "Frankie Sullivan, Jim Peterik",
-    imagen: "Imagenes/PortadaRocky3.jpg",
+    imagen: "Imagenes/PortadaRocky.jpg",
     descripcion: "Contiene el eterno himno de entrenamiento 'Eye of the Tiger', además del clásico acompañamiento orquestal de Bill Conti.",
     tracklist: ["Eye of the Tiger", "Take You Back", "Pushin'", "Decision"],
     precioCD: 30000,
