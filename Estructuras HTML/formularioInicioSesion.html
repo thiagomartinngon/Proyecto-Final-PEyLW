@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion de Usuario</title>
+    <link rel="stylesheet" href="inicioDeSesion.css">
+</head>
+<body>
+<header>
+    <div class="encabezado">
+
+        <div class="titulo">
+            <h1>Tienda de musica</h1>
+            <h2>La musica que querés, la tenemos acá</h2>
+        </div>
+
+        <div class="buscador">
+            <input type="text" placeholder="Buscar álbum o artista...">
+            <button>Buscar</button>
+        </div>
+         <div class="paginaprincipal">
+    <a href="Index.html" class="paginaPrincipal">Volver a la Pagina Principal</a>   
+       
+        <nav>-
+            <div class="carrito">
+                <a href="CarritoDeCompras.html"><img src="Imagenes/carritoImagen.png" alt="Carrito de compras"><span id="contadorCarrito">0</span></a>
+            </div>
+        </nav>
+
+    </div>
+</header>   
+        <div class="iniciodesesion">
+        <h1>Inicie Sesion como cliente </h1>
+           <form id="formularioInicioSesion">
+            <fieldset>
+            <legend>Complete los datos para su Inicio de Sesion</legend> 
+                    <label for="CorreoElect">Correo Electronico</label><br>
+                    <input type="email" name="Correo" id="CorreoElectronico" size="25" required><br>
+                    <label for="contraseña">Contraseña</label><br>
+                    <input type="text" name="ContraseñaUsuario" id="Contraseña" size="25" required><br>
+            <br>
+        </fieldset>
+        <br>    
+        <input type="submit" name="RegistroUsuario" value="Iniciar Sesion">
+          </form>
+    </div>
+    <footer class="pie">
+    <div class="tituloProyecto">
+         <h2>Tienda de música</h2>
+         <p>La música que querés, la tenemos acá.</p>
+    </div>
+
+    <div class="informacion">
+        <div>
+            <h3>Sobre nosotros</h3>
+            <p>Somos estudiantes de 5to5ta haciendo un proyecto de final sobre una tienda de música en línea.</p>
+            <P>Usamos todo nuestro intelecto, conocimientos y creatividad para crear todo esto.</P>
+            <p>Para la materia de Programación Estática y Laboratorio Web.</p>
+            <a href="Nosotros.html">Conoce más sobre nosotros</a>
+        </div>
+        <div>
+            <h3>Contacto</h3>
+            <p>Email: tienda@gmail.com</p>
+            <p>Instagram: @tiendademusica</p>
+        </div>
+         <div>
+            <h3>Redes sociales</h3>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>TikTok</p>
+        </div>
+    </div>
+    <div class="derechosAutor">
+        <p>© 2026 Tienda de música - Todos los derechos reservados.</p>
+    </div>
+
+</footer>
+<script>
+    
+document.getElementById("formulario").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let correo = document.getElementById("CorreoElectronico").value;
+    let contraseña = document.getElementById("Contraseña").value;
+    let acuerdos = document.getElementById("acuerdos").checked;
+
+    if ( correo == "" || contraseña == "") {
+        alert("Debe completar todos los campos.");
+    }
+
+
+    else if (contraseña.length < 6) {
+        alert("La contraseña debe tener al menos 6 caracteres.");
+    }
+
+    else if (acuerdos == false) {
+        alert("Debe aceptar los términos y condiciones.");
+    }
+
+    else {
+        alert("¡Inicio de sesion completado correctamente!");
+    }
+
+});
+</script>
+</body>
+</html>

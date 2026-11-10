@@ -3,34 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RegistroDeUsuario</title>
+    <title>Registro de Usuario</title>
     <link rel="stylesheet" href="registro.css">
 </head>
 <body>
-    <div class="registro">
-    <h1>Registrarse como cliente </h1>
-    <fieldset>
-        <legend>Complete los datos para su registro</legend> 
-                <label for="nombre">Nombre </label><br>
-                <input type="text" name="nombre" id="nombreCliente" size="20" required><br>
-                <label for="apellido">Apellido</label><br>
-                <input type="text" name="apellido" id="apellidoCliente" size="20" required><br>
-                <label for="Dni">DNI</label><br>
-                <input type="text" name="Dni" id="DocumentoNacional" size="20" minlength="9" maxlength="9" required><br>
-                <label for="CorreoElect">Correo Electronico</label><br>
-                <input type="email" name="Correo" id="CorreoElectronico" size="25" required><br>
-                <label for="contraseña">Contraseña</label><br>
-                <input type="text" name="ContraseñaUsuario" id="Contraseña" size="25" required><br>
+<header>
+    <div class="encabezado">
 
-                <br>    
-                 <input type="checkbox" name="acuerdosYcondiciones" value="acepta" id="acuerdos" required>
-                 <label for="acuerdosYcondiciones"><a href="https://youtu.be/PyoRdu-i0AQ?si=R7X1uUyKxEaJAXKr">Acepto términos y condiciones</label></a><br>
-                <br>
-                        
-    </fieldset>
-    <br>    
-    <input type="submit" name="RegistroUsuario" value="Acepto registrarme">
+        <div class="titulo">
+            <h1>Tienda de musica</h1>
+            <h2>La musica que querés, la tenemos acá</h2>
+        </div>
+
+        <div class="buscador">
+            <input type="text" placeholder="Buscar álbum o artista...">
+            <button>Buscar</button>
+        </div>
+        <div class="iniciosesion">
+    <a href="formularioInicioSesion.html" class="inicioDeSesion">Inicio de sesion</a>   
+        <nav>-
+            <div class="carrito">
+                <a href="CarritoDeCompras.html"><img src="Imagenes/carritoImagen.png" alt="Carrito de compras"><span id="contadorCarrito">0</span></a>
+            </div>
+        </nav>
 
     </div>
+</header>   
+        <div class="registro">
+        <h1>Registrarse como cliente </h1>
+           <form id="formularioRegistro">
+            <fieldset>
+            <legend>Complete los datos para su registro</legend> 
+                    <label for="nombre">Nombre </label><br>
+                    <input type="text" name="nombre" id="nombreCliente" size="20" required><br>
+                    <label for="apellido">Apellido</label><br>
+                    <input type="text" name="apellido" id="apellidoCliente" size="20" required><br>
+                    <label for="Dni">DNI</label><br>
+                    <input type="text" name="Dni" id="DocumentoNacional" size="20" minlength="8" maxlength="8" required><br>
+                    <label for="CorreoElect">Correo Electronico</label><br>
+                    <input type="email" name="Correo" id="CorreoElectronico" size="25" required><br>
+                    <label for="contraseña">Contraseña</label><br>
+                    <input type="text" name="ContraseñaUsuario" id="Contraseña" size="25" required><br>
+
+                    <br>    
+                    <input type="checkbox" name="acuerdosYcondiciones" value="acepta" id="acuerdos" required>
+                    <label for="acuerdosYcondiciones"><a href="https://youtu.be/PyoRdu-i0AQ?si=R7X1uUyKxEaJAXKr">Acepto términos y condiciones</label></a><br>
+                    <br>
+                            
+        </fieldset>
+        <br>    
+        <input type="submit" name="RegistroUsuario" value="Acepto registrarme">
+          </form>
+    </div>
+    <footer class="pie">
+    <div class="tituloProyecto">
+         <h2>Tienda de música</h2>
+         <p>La música que querés, la tenemos acá.</p>
+    </div>
+
+    <div class="informacion">
+        <div>
+            <h3>Sobre nosotros</h3>
+            <p>Somos estudiantes de 5to5ta haciendo un proyecto de final sobre una tienda de música en línea.</p>
+            <P>Usamos todo nuestro intelecto, conocimientos y creatividad para crear todo esto.</P>
+            <p>Para la materia de Programación Estática y Laboratorio Web.</p>
+            <a href="Nosotros.html">Conoce más sobre nosotros</a>
+        </div>
+        <div>
+            <h3>Contacto</h3>
+            <p>Email: tienda@gmail.com</p>
+            <p>Instagram: @tiendademusica</p>
+        </div>
+         <div>
+            <h3>Redes sociales</h3>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>TikTok</p>
+        </div>
+    </div>
+    <div class="derechosAutor">
+        <p>© 2026 Tienda de música - Todos los derechos reservados.</p>
+    </div>
+
+</footer>
+<script>
+    
+document.getElementById("formularioRegistro").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let nombre = document.getElementById("nombreCliente").value;
+    let apellido = document.getElementById("apellidoCliente").value;
+    let dni = document.getElementById("DocumentoNacional").value;
+    let correo = document.getElementById("CorreoElectronico").value;
+    let contraseña = document.getElementById("Contraseña").value;
+    let acuerdos = document.getElementById("acuerdos").checked;
+
+    if (nombre == "" || apellido == "" || dni == "" || correo == "" || contraseña == "") {
+        alert("Debe completar todos los campos.");
+    }
+
+    else if (isNaN(dni) || dni.length != 8) {
+        alert("El DNI debe tener 8 números.");
+    }
+
+    else if (contraseña.length < 6) {
+        alert("La contraseña debe tener al menos 6 caracteres.");
+    }
+
+    else if (acuerdos == false) {
+        alert("Debe aceptar los términos y condiciones.");
+    }
+
+    else {
+        alert("¡Registro completado correctamente!");
+    }
+
+});
+</script>
 </body>
 </html>
