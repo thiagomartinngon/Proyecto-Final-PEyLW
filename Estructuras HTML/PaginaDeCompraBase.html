@@ -32,12 +32,6 @@
                 <a href="#">Soundtrack</a>
                 <a href="#">K-pop</a>
                 <a href="#">Jazz</a>    
-             <select name="Dispositivos" id="Dispositivos">
-        <option value="Dispositivos">Dispositivos</option>  
-        <option value="Auriculares"><a href="#">Auriculares</a></option>
-        <option value="Parlantes"><a href="#">Parlantes</a></option>
-        <option value="Reproductores"><a href="#">Reproductores</a></option>
-    </select>
         </div>
 
 <main>
@@ -50,19 +44,14 @@
 
         <div class="descripcion">
             <h2>Descripción</h2>
-            <p>
-                Oktubre es el segundo álbum de estudio de Patricio Rey
-                y sus Redonditos de Ricota, publicado en 1986.
+            <p id="p-descripcion">
+                
             </p>
 
             <div class="tracklist">
                 <h3>Tracklist   </h3>
-                <ol>
-                    <li>Fuegos de octubre</li>
-                    <li>Preso en mi ciudad</li>
-                    <li>Música para pastillas</li>
-                    <li>Semen-Up</li>
-                    <li>Divina TV Führer</li>
+                <ol id="p-tracklist"></ol>
+                   
                 </ol>
             </div>
         </div>
@@ -73,25 +62,24 @@
 
     <section class="info">
 
-        <h1>Oktubre</h1>
-        <h2>Patricio Rey y sus Redonditos de Ricota</h2>
+        <h1 id="p-titulo"></h1>
+        <h2 id="p-artista"></h2>
 
         <p>Código de producto: 000123</p>
         <p>Stock: Disponible</p>
 
         <fieldset>
-            <legend>Elegí el formato</legend>
+    <legend>Elegí el formato</legend>
 
-            <input type="radio" name="formato" id="cd" value="12000" checked>
-            <label for="cd">CD</label>
+    <input type="radio" name="formato" id="cd" checked>
+    <label for="cd">CD</label>
 
-            <input type="radio" name="formato" id="vinilo" value="28000">
-            <label for="vinilo">Vinilo</label>
+    <input type="radio" name="formato" id="vinilo">
+    <label for="vinilo">Vinilo</label>
 
-            <input type="radio" name="formato" id="casete" value="9000">
-            <label for="casete">Casete</label>
-
-        </fieldset>
+    <input type="radio" name="formato" id="casete">
+    <label for="casete">Casete</label>
+    </fieldset>
 
         <div class="precio">
             <p>Precio:</p>
@@ -137,43 +125,66 @@
     </div>
 
 </footer>
+   <script src="datos.js"></script>
 
-<script>
-    const precio = document.querySelector("#precio");
-    const formatos = document.querySelectorAll('input[name="formato"]');
-
-    formatos.forEach(function(formato) {
-        formato.addEventListener("change", function() {
-            precio.textContent = "$" + Number(formato.value).toLocaleString("es-AR");
-        });
-    });
-</script>
-<script>
+ 
+    <script>
     
-    const datosDisco = JSON.parse(localStorage.getItem("discoParaFicha"));
+    let albumActualSeleccionado = null;
 
-    if (datosDisco) {
-       
-        document.querySelector(".portada img").src = datosDisco.imagen;
-        document.querySelector(".info h1").textContent = datosDisco.titulo;
-        document.querySelector(".info h2").textContent = datosDisco.artista;
+    document.addEventListener("DOMContentLoaded", function() {
         
+        let idBuscar = localStorage.getItem("idAlbumSeleccionado");
+        
+     
+        for (var i = 0; i < misAlbumes.length; i++) {
+            if (misAlbumes[i].id === idBuscar) {
+                albumActualSeleccionado = misAlbumes[i];
+                break;
+            }
+        }
+
        
-        document.title = datosDisco.titulo + " - Tienda de música";
+        if (albumActualSeleccionado) {
+            document.title = albumActualSeleccionado.titulo + " - Tienda de música";
+            document.getElementById("p-titulo").innerHTML = albumActualSeleccionado.titulo;
+            document.getElementById("p-artista").innerHTML = albumActualSeleccionado.artista;
+            document.querySelector(".portada img").src = albumActualSeleccionado.imagen;
+            document.getElementById("p-descripcion").innerHTML = albumActualSeleccionado.descripcion;
+
+         
+            let listaHTML = "";
+            for (var j = 0; j < albumActualSeleccionado.tracklist.length; j++) {
+                listaHTML += "<li>" + albumActualSeleccionado.tracklist[j] + "</li>";
+            }
+            document.getElementById("p-tracklist").innerHTML = listaHTML;
+
+           
+            document.getElementById("cd").value = albumActualSeleccionado.precioCD;
+            document.getElementById("vinilo").value = albumActualSeleccionado.precioVinilo;
+            document.getElementById("casete").value = albumActualSeleccionado.precioCasete;
+
+        
+            actualizarTextoPrecio();
+        }
+    });
+
+   
+    function actualizarTextoPrecio() {
+        let radioMarcado = document.querySelector('input[name="formato"]:checked');
+        if (radioMarcado) {
+            let precioNumerico = parseInt(radioMarcado.value);
+            document.getElementById("precio").innerHTML = "$" + precioNumerico.toLocaleString("es-AR");
+        }
     }
 
     
     const opcionesFormato = document.querySelectorAll('input[name="formato"]');
-    const textoPrecio = document.getElementById('precio');
-
     opcionesFormato.forEach(radio => {
-        radio.addEventListener('change', function() {
-            const precioSeleccionado = parseInt(this.value);
-            textoPrecio.textContent = "$" + precioSeleccionado.toLocaleString('es-AR');
-        });
+        radio.addEventListener("change", actualizarTextoPrecio);
     });
 
-
+    
     const botonComprar = document.querySelector('.comprar');
 
     botonComprar.addEventListener('click', function() {
@@ -184,7 +195,7 @@
         const productoParaCarrito = {
             id: tituloActual.replace(/\s+/g, '-').toLowerCase() + "-" + formatoMarcado.id, 
             titulo: tituloActual + " (" + formatoMarcado.id.toUpperCase() + ")", 
-            precio: parseInt(formatoMarcado.value),
+            precio: parseInt(formatoMarcado.value), 
             imagen: imagenActual, 
             cantidad: 1
         };
@@ -200,10 +211,10 @@
 
         localStorage.setItem("carritoTienda", JSON.stringify(carrito));
 
-        alert(`¡Se agregó ${productoParaCarrito.titulo} al carrito!`);
+        alert("¡Se agregó " + productoParaCarrito.titulo + " al carrito!");
         window.location.href = "CarritoDeCompras.html"; 
     });
-</script>
+    </script>
 
 </body>
 </html>
