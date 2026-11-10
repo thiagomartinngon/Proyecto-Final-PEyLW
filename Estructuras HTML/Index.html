@@ -17,8 +17,8 @@
     </div>
 
     <div class="buscador">
-        <input type="text" placeholder="Buscar álbum o artista...">
-        <button>Buscar</button>
+        <input type="text" id="buscadorInput" placeholder="Buscar álbum o artista...">
+        <button id="btnBuscar" type="button">Buscar</button>
     </div>
 
     <div class="Registro">
@@ -560,5 +560,48 @@
 </footer>
  <script src="datos.js"></script>
  <script src="app.js"></script>
+
+
+
+ <script>
+    // Buscador blindado y optimizado para Index_2.html
+    window.addEventListener("pageshow", () => {
+        const inputBuscador = document.getElementById("buscadorInput");
+        const btnBuscar = document.getElementById("btnBuscar");
+
+        function ejecutarFiltro() {
+            if (!inputBuscador) return;
+            const textoBusqueda = inputBuscador.value.toLowerCase().trim();
+            const todosLosAlbumes = document.querySelectorAll(".Album");
+
+            todosLosAlbumes.forEach(album => {
+                const titulo = album.querySelector("h3") ? album.querySelector("h3").textContent.toLowerCase() : "";
+                const artista = album.querySelector("p") ? album.querySelector("p").textContent.toLowerCase() : "";
+
+                if (titulo.includes(textoBusqueda) || artista.includes(textoBusqueda)) {
+                    album.style.display = ""; 
+                } else {
+                    album.style.display = "none";
+                }
+            });
+        }
+
+        if (inputBuscador) {
+            inputBuscador.value = ""; 
+            ejecutarFiltro();
+            inputBuscador.oninput = ejecutarFiltro;
+        }
+
+        if (btnBuscar) {
+            btnBuscar.onclick = (e) => {
+                e.preventDefault();
+                ejecutarFiltro();
+            };
+        }
+    });
+ </script>
+
+
+
 </body>
 </html>
