@@ -359,8 +359,7 @@ const misAlbumes = [
     artista: "Jun Senoue, Kenichi Tokoi, Fumie Kumatani, Tomoya Ohtani",
     imagen: "Imagenes/PortadaSonicAdventure.jpg",
     descripcion: "Música enérgica que definió el salto en 3D de Sonic, mezclando Rock, Hardcore Punk y Jazz Fusión.",
-    tracklist: ["Open Your Heart", "It Doesn't Matter", "Welcome to Station Square", "Azure Blue World"],
-    precioCD: 28000,
+    tracklist: ["Introduction ... (feat. Open Your Heart)", "Welcome to Station Square", "Event: Strain", "Boss: CHAOS ver.0, 2, 4", "Azure Blue World ...for Emerald Coast", "Windy and Ripply ...for Emerald Coast", "BIG Fishes at Emerald Coast...", "and... Fish Hits!", "and... Got Fish!", "Hey You! It's Time to Speed Up!!!", "Twinkle Cart ...for Twinkle Park", "Pleasure Castle ...for Twinkle Park", "Twinkle Circuit", "Fakery Way ...for Twinkle Park", "Run Through the Speed Highway ...for Speed Highway", "Goin' Down!? ...for Speed Highway", "At Dawn ...for Speed Highway", "Choose Your Buddy! -Slap Bass ver.-", "Theme of CHAO", "Letz Get This Party Started ...for CHAO Race Entrance", "Join Us 4 Happy Time ...for CHAO Race", "Fun Time Was Over ...for CHAO Race", "The Dreamy Stage ...for Casinopolis", "Blue Star ...for Casinopolis", "Dilapidated Way ...for Casinopolis", "Challenge!! for Another Aim", "Egg Mobile ...Boss: Egg Hornet", "Mystic Ruin", "Windy Hill ...for Windy Valley", "Tornado ...for Windy Valley", "The Air ...for Windy Valley", "Fight for My Own Way ...Boss: Event", "Snowy Mountain ...for Icecap", "Limestone Cave ...for Icecap", "Be Cool, Be Wild and Be Groovy ...for Icecap", "Invincible ...No Fear!", "Choose Your Buddy! -Finger Bass ver.-"],
     precioVinilo: 49000,
     precioCasete: 15680
   },
@@ -368,9 +367,9 @@ const misAlbumes = [
     id: "trolls-band-together-ost",
     titulo: "Trolls Band Together (Original Motion Picture Soundtrack)",
     artista: "Trolls Band",
-    imagen: "Imagenes/PortadaTrollsBandTogether.jpg",
+    imagen: "Imagenes/PortadaTrolls.jpg",
     descripcion: "Un álbum súper bailable cargado de mashups de pop moderno y canciones originales del elenco animado.",
-    tracklist: ["Better Place", "Perfect", "Let's Get Married", "Mount Rageous"],
+    tracklist: ["Better Place", "Perfect", "Let's Get Married", "Watch Me Work", "Vacay Island", "BroZone's Back", "Lonely People", "Hustle Dimension", "It Takes Two", "Mount Rageous", "Better Place (Family Harmony)", "Better Place (Reunion)", "Family", "9 to 5"],
     precioCD: 23000,
     precioVinilo: 40250,
     precioCasete: 12880
@@ -381,7 +380,7 @@ const misAlbumes = [
     artista: "Makoto Hosoi, Takafumi Inamori, Ryo Koike",
     imagen: "Imagenes/PortadaDeadOrAlive3.jpg",
     descripcion: "Banda sonora de alta intensidad con guitarras eléctricas ideal para los combates rápidos del videojuego.",
-    tracklist: ["Grand Prix", "Blazed Up", "The Shoeshine", "Dead or Alive Theme"],
+    tracklist: ["X-ray Reflecting Mirror", "Deep Impact", "Eternity", "The Moon Leads Her To...", "It's to Show", "Start In Life", "True Beauty", "War Zone", "Mayflower", "Reaction", "Monster", "Eclipse", "Blood Tie", "Caribbean Blue", "Prismatic Butterfly", "Firelight Holly", "Conditioning", "X-ray", "Reincarnate", "Goin' for Broke", "Power Shovel", "Route X", "Sunny Side", "I don't believe it!", "Magic In The Night", "Red Moon", "I'll Be There For You", "Knifepoint", "Killers", "Trip", "Son Of The Dragon", "Four Thousand", "Gen-fu's Treasure", "Cracker", "Perpetual Motion", "Look Ahead", "Hunting Time", "Karma", "A Wind", "Stand Up"],
     precioCD: 50000,
     precioVinilo: 87500,
     precioCasete: 28000
@@ -392,7 +391,7 @@ const misAlbumes = [
     artista: "John Powell, Randy Newman",
     imagen: "Imagenes/PortadaCars.jpg",
     descripcion: "Una fantástica mezcla de música de carretera norteamericana, country y composiciones orquestales de Pixar.",
-    tracklist: ["Real Gone", "Route 66", "Life is a Highway", "Behind the Clouds", "Our Town"],
+    tracklist: ["Real Gone", "Route 66", "Life Is a Highway", "Behind the Clouds", "Our Town", "Sh-Boom", "Route 66", "Find Yourself", "Opening Race", "McQueen's Lost", "My Heart Would Know", "Bessie", "Dirt Is Different", "New Road", "Tractor Tipping", "McQueen and Sally", "Goodbye", "Pre-Race Pageantry", "The Piston Cup", "The Big Race"],
     precioCD: 25000,
     precioVinilo: 43750,
     precioCasete: 14000
@@ -401,9 +400,9 @@ const misAlbumes = [
     id: "zelda-ocarina-of-time-ost",
     titulo: "The Legend of Zelda: Ocarina of Time (Original Soundtrack)",
     artista: "Koji Kondo",
-    imagen: "Imagenes/PortadaZeldaOcarinaOfTime.jpg",
+    imagen: "Imagenes/PortadaZelda.jpg",
     descripcion: "Una de las obras más influyentes e importantes de la historia de los videojuegos, compuesta enteramente por Koji Kondo.",
-    tracklist: ["Title Theme", "Kokiri Forest", "Hyrule Field Main Theme", "Zelda's Lullaby", "Song of Time"],
+    tracklist: ["Title Theme", "Enter Ganondorf", "Deku Tree", "Fairy Flying", "House", "Kokiri Forest", "Open Treasure Box", "Item Catch", "Small Item Catch", "Shop", "Battle", "Inside the Deku Tree", "Boss Battle", "Boss Clear", "Heart Container Get", "Legend of Hyrule", "Spiritual Stone Get", "Fairy Ocarina Get", "Hyrule Field Main Theme", "Kepora Gebora's Theme", "Market", "Shooting Gallery", "Hyrule Castle Courtyard", "Enter Zelda", "Ocarina (Zelda's Lullaby)", "Zelda's Theme", "Ocarina (Epona's Song)", "LonLon Ranch", "Mini Game", "Kakariko Village", "Ocarina (Sun's Song)", "Hyrule Field Morning Theme", "Goron City", "Ocarina (Saria's Song)", "Lost Woods", "Dodongo's Cavern", "Middle Boss Battle", "Dinosaur Boss Battle", "Zora's Domain", "Great Fairy's Fountain", "Potion Shop", "Inside Jabu-Jabu's Belly", "Ocarina (Song of Time)", "Temple of Time", "Open Door of Temple of Time", "Master Sword", "Ganondorf's Theme", "Chamber of the Sages", "Medal Get Fanfare", "Sheik's Theme", "Horse Race", "Horse Race Goal", "Ingo's Theme", "Escape from LonLon Ranch", "Kakariko Village Orchestra Version", "Ocarina (Song of Storms)", "Windmill Hut", "Minuet of Woods", "Forest Temple", "Bolero of Fire", "Fire Temple", "Ice Cavern", "Serenade of Water", "Water Temple", "Nocturne of Shadow", "Prelude of Light", "Shadow Temple", "Gerudo Valley", "Spirit Temple", "Requiem of Spirit", "Kotake & Koume's Theme", "Meet Again Zelda", "Game Over", "Ganon's Castle Bridge", "Ganon's Castle Underground", "Inside Ganon's Castle", "Ganondorf's Battle", "Escape from Ganon's Castle", "Last Battle", "Seal of Six Sages", "Ocarina of Time", "End Credits"],
     precioCD: 40000,
     precioVinilo: 70000,
     precioCasete: 22400
@@ -414,7 +413,7 @@ const misAlbumes = [
     artista: "Frankie Sullivan, Jim Peterik",
     imagen: "Imagenes/PortadaRocky.jpg",
     descripcion: "Contiene el eterno himno de entrenamiento 'Eye of the Tiger', además del clásico acompañamiento orquestal de Bill Conti.",
-    tracklist: ["Eye of the Tiger", "Take You Back", "Pushin'", "Decision"],
+    tracklist: ["Eye of the Tiger", "Take You Back (Tough Gym)", "Pushin'", "Decision", "Mickey", "Take You Back", "Reflections", "Gonna Fly Now", "Adrian", "Conquest"],
     precioCD: 30000,
     precioVinilo: 52500,
     precioCasete: 16800
@@ -425,7 +424,7 @@ const misAlbumes = [
     artista: "Toru Minegishi, Ryo Nagamatsu, Mitsuhiro Kida, Takahisa Yamamoto, Isami Yoshida",
     imagen: "Imagenes/PortadaSplatoon2.jpg",
     descripcion: "La vibrante e hiperactiva banda sonora del exitoso videojuego de Nintendo, cargada de punk, electrónica y rock alternativo.",
-    tracklist: ["Inkopolis Memorial", "Inkoming!", "Rip Entry", "Undertow", "Don't Slip"],
+    tracklist: ["Opening","Inkoming!","Rip Entry","Undertow","Don't Slip","Endolphin Surge","Now or Never!","Victory! – Jingle", "Y mucho más..."],
     precioCD: 60000,
     precioVinilo: 105000,
     precioCasete: 33600
@@ -434,9 +433,9 @@ const misAlbumes = [
     id: "identity-v-anniversary",
     titulo: "Identity V Anniversary Sound Track(Call of the Abyss)",
     artista: "Wang Jingfei, Tang Yuchen, Zhejiang, Lang Lang",
-    imagen: "Imagenes/PortadaIdentityV.jpg",
+    imagen: "Imagenes/PortadaIDV.jpg",
     descripcion: "Banda sonora épica y orquestal diseñada para los eventos competitivos globales de Identity V.",
-    tracklist: ["Call of the Abyss Theme", "The Great Race", "Abyss Symphony"],
+    tracklist: ["Your Identity", "SECRET (COAIII Themed Song) (Japanese Version)", "SECRET (COAIII Themed Song) (English Version)", "Overdrive (COAIV Themed Song) (Short Version)", "Overdrive (COAIV Themed Song)", "Call of the Neon Colors (COAV Themed Song)", "Call of the Neon Colors (Steam Wave Version)", "Metropolis (COAV Themed Song)", "Call of the Void (COAVI Themed Song)", "Echoes of Tomorrow (COAVI Japan Region Themed Song)"],
     precioCD: 45000,
     precioVinilo: 78750,
     precioCasete: 25200
@@ -447,7 +446,7 @@ const misAlbumes = [
     artista: "Daisuke Shiiba, Ryutaro Takahashi, Riyu Tamura, Asuka Ito",
     imagen: "Imagenes/PortadaTomodachi.jpg",
     descripcion: "Las entrañables, cómicas y peculiares pistas musicales que acompañaban el día a día de la vida de los Miis.",
-    tracklist: ["Mii Apartment", "Food Shop", "Concert Hall", "Island Morning"],
+    tracklist: ["Friend Registration","In the Room","The Island at Noon","The Island at Night","News Flash","Mii News","Food Shop","Clothing Store","Interior Shop","Majority Rule Hall","Compatibility Tester","Y mucho más..."],
     precioCD: 23000,
     precioVinilo: 40250,
     precioCasete: 12880
@@ -458,7 +457,7 @@ const misAlbumes = [
     artista: "Motoi Sakuraba, Yuka Kitamura",
     imagen: "Imagenes/PortadaDarkSouls2.jpg",
     descripcion: "Piezas corales y orquestales oscuras que definen la lúgubre atmósfera de melancolía y peligro en el reino de Drangleic.",
-    tracklist: ["Departure", "Majula", "The Last Giant", "Dragonrider", "Fia McNamara"],
+    tracklist: ["Departure", "Fire Keepers", "Majula", "The Last Giant", "The Pursuer", "Old Dragonslayer", "Dragonrider", "Sparring", "Flexile Sentry", "Ruin Sentinel", "Belfry Gargoyle", "The Lost Sinner", "Executioner's Chariot", "Duel", "Skeleton Lord", "Covetous Demon", "Mytha, the Baneful Queen", "Old Iron King", "Scorpioness Najka", "Royal Rat Authority", "The Duke's Dear Freja", "Royal Rat Vanguard", "The Rotten", "Queen of Drangleic", "Looking Glass Knight", "Darklurker", "Milfanito", "Demon of Song", "Velstadt, the Royal Aegis", "King Vendrick", "Throne Defender, Throne Watcher", "Guardian Dragon", "Ancient Dragon", "Nashandra", "Longing"],
     precioCD: 40000,
     precioVinilo: 70000,
     precioCasete: 22400
@@ -469,7 +468,7 @@ const misAlbumes = [
     artista: "Dan Forden",
     imagen: "Imagenes/PortadaMortalKombat3.jpg",
     descripcion: "La icónica y agresiva música arcade compuesta por Dan Forden, repleta de sintetizadores industriales pesados.",
-    tracklist: ["Choose Your Destiny", "The Subway", "The Street", "The Desert", "Kahn's Kave"],
+    tracklist: ["MK3 Mish Mash", "The Roof", "The Bank", "The Street", "The Subway", "In Church", "The Bridge", "The Pit", "The Grave Yard", "The Soul Chamber", "MK3 Audio Tour"],
     precioCD: 35000,
     precioVinilo: 61250,
     precioCasete: 19600
@@ -480,7 +479,7 @@ const misAlbumes = [
     artista: "Rock Burwell",
     imagen: "Imagenes/PortadaObsession.jpg",
     descripcion: "Composiciones tensas, ambientales y cinemáticas para la banda sonora original del thriller psicológico Obsession.",
-    tracklist: ["Main Titles", "The House", "Suspicion", "End Credits"],
+    tracklist: ["Obsession", "Sandy", "Nikki", "One Wish Willow", "Make a Wish", "R U OK", "Can You Sleep With Me?", "Research", "Cat’s Out of the Bag", "Love is in the Air, Pt. 1", "Date Night", "Go Back to Sleep", "If You’re Having Trouble With the Door", "What’s the Verdict?", "Hansel", "Into Darkness", "I Can’t Be Nikki", "You Wished for This", "The Letter", "One Wish Willow (Revisited)", "You Only Get One", "Billionaire", "Why Don’t You Love Me?", "Mirror Shot", "Bear", "Love is in the Air, Pt. 2"],
     precioCD: 35000,
     precioVinilo: 61250,
     precioCasete: 19600
@@ -491,7 +490,7 @@ const misAlbumes = [
     artista: "Peter McConnell",
     imagen: "Imagenes/PortadaPsychonauts.jpg",
     descripcion: "Una banda sonora sumamente imaginativa y variada que cambia de estilo para adaptarse a las locas mentes del juego.",
-    tracklist: ["The Whispering Rock", "Basic Braining", "Sasha's Shooting Gallery", "The Milkman Conspiracy"],
+    tracklist: ["The Meat Circus", "Whispering Rock", "Stay Out Of The Moonlight", "Hagatha's Home", "Happy Flowers", "The Lungfish Lair", "The Milkman", "Dr. Lobato's Lab", "Duel With The Critic", "The Catwalk Phantom", "March Of The Inmates", "Sasha's Immaculate Mind", "The Censors Unleashed", "Black Velvetopia", "The Wild Bull Run", "The Matador", "Gloria's Secret Garden", "Bonita's Tragic Muse", "Bunk Time", "Title And End Credits", "Emotional Baggage"],
     precioCD: 35000,
     precioVinilo: 61250,
     precioCasete: 19600
@@ -502,7 +501,7 @@ const misAlbumes = [
     artista: "NMIXX",
     imagen: "Imagenes/PortadaBlueValentine.jpg",
     descripcion: "Lanzamiento conceptual especial que destaca las impecables capacidades vocales del grupo NMIXX.",
-    tracklist: ["Blue Valentine", "Love Me Like This (Acoustic)", "Blue Valentine (Inst.)"],
+    tracklist: ["Blue Valentine", "SPINNIN' ON IT", "Phoenix", "Reality Hurts", "RICO", "Game Face", "PODIUM", "Crush On You", "ADORE U", "Shape of Love", "O.O Part 1 (Baila)", "O.O Part 2 (Superhero)"],
     precioCD: 35000,
     precioVinilo: 61250,
     precioCasete: 19600
@@ -513,7 +512,7 @@ const misAlbumes = [
     artista: "Girls' Generation - The 2nd Album",
     imagen: "Imagenes/PortadaOh.jpg",
     descripcion: "El histórico segundo álbum de las reinas indiscutibles del K-Pop que dominó los rankings en el año 2010.",
-    tracklist: ["Oh!", "Show! Show! Show!", "Sweet Talking Baby", "Forever"],
+    tracklist: ["Oh!", "Show! Show! Show!", "Sweet Talking Baby", "Forever", "Be Happy", "Boys & Girls (feat. Key)", "Talk to Me", "Star Star Star (☆★☆)", "Stick Wit U", "Day by Day", "Gee", "Genie"],
     precioCD: 45000,
     precioVinilo: 78750,
     precioCasete: 25200
@@ -524,7 +523,7 @@ const misAlbumes = [
     artista: "Girls' Generation",
     imagen: "Imagenes/PortadaForever1.jpg",
     descripcion: "El triunfal regreso discográfico de Girls' Generation para celebrar su decimoquinto aniversario junto a sus fans.",
-    tracklist: ["FOREVER 1", "Lucky Like That", "Seventeen", "Villain", "You Better Run"],
+    tracklist: ["FOREVER 1", "Lucky Like That", "Seventeen", "Villain", "You Better Run", "Closer", "Mood Lamp", "Summer Night", "Freedom", "Paper Plane"],
     precioCD: 40000,
     precioVinilo: 70000,
     precioCasete: 22400
@@ -535,7 +534,7 @@ const misAlbumes = [
     artista: "LOONA",
     imagen: "Imagenes/PortadaXX.jpg",
     descripcion: "La aclamada reedición del EP debut de LOONA con un complejo trasfondo sonoro y conceptual que dio la vuelta al mundo.",
-    tracklist: ["Butterfly", "Satellite", "Curiosity", "Colors", "Where you at"],
+    tracklist: ["X X", "Butterfly", "Satellite", "Curiosity", "Colors", "Where you at", "Stylish", "Perfect Love", "Heat (열기)", "favOriTe", "Hi High", "+ +"],
     precioCD: 55000,
     precioVinilo: 96250,
     precioCasete: 30800
@@ -546,7 +545,7 @@ const misAlbumes = [
     artista: "LE SSERAFIM",
     imagen: "Imagenes/PortadaUnforgiven.jpg",
     descripcion: "El ambicioso primer álbum de estudio de LE SSERAFIM que relata su camino de empoderamiento desafiando las reglas.",
-    tracklist: ["UNFORGIVEN", "No-Return", "Eve, Psyche & The Bluebeard’s wife", "FEARLESS (2023 ver.)"],
+    tracklist: ["The World Is My Oyster (2023 Ver.)", "FEARLESS (2023 Ver.)", "Blue Flame (2023 Ver.)", "The Hydra", "ANTIFRAGILE", "Impurities", "Burn the Bridge", "UNFORGIVEN (feat. Nile Rodgers)", "No-Return (Into the unknown)", "Eve, Psyche & The Bluebeard's wife", "FEARNOT (Between you, me and the lamppost)", "Flash Forward", "Fire in the belly"],
     precioCD: 30000,
     precioVinilo: 52500,
     precioCasete: 16800
@@ -557,7 +556,7 @@ const misAlbumes = [
     artista: "aespa",
     imagen: "Imagenes/PortadaArmageddon.jpg",
     descripcion: "El arrollador y futurista primer álbum de larga duración de aespa, inmerso en su concepto de multiversos.",
-    tracklist: ["Supernova", "Armageddon", "Licorice", "Long Chat", "Live My Life"],
+    tracklist: ["Supernova", "Armageddon", "Set The Tone", "Mine", "Licorice", "BAHAMA", "Long Chat (#♥)", "Prologue", "Live My Life", "Melody"],
     precioCD: 30000,
     precioVinilo: 52500,
     precioCasete: 16800
@@ -568,7 +567,7 @@ const misAlbumes = [
     artista: "aespa",
     imagen: "Imagenes/PortadaLemonade.jpg",
     descripcion: "Una producción pop refrescante y potente que equilibra vocales dulces con beats fuertemente electrónicos.",
-    tracklist: ["Lemonade", "Spicy", "Salty & Sweet", "Thirsty"],
+    tracklist: ["WDA (Whole Different Animal) (feat. G-DRAGON)", "LEMONADE", "SHAKIN'", "Can't Help Myself", "Camouflage", "Bite", "Switchblade (feat. Ty Dolla $ign)", "Roll", "My Plan", "'Til We Die"],
     precioCD: 40000,
     precioVinilo: 70000,
     precioCasete: 22400
@@ -579,18 +578,18 @@ const misAlbumes = [
     artista: "TWICE",
     imagen: "Imagenes/PortadaEyesWideOpen.jpg",
     descripcion: "Segundo larga duración coreano de TWICE, madurando hacia un estilo synth-pop inspirado fuertemente en la década de los 80.",
-    tracklist: ["I CAN'T STOP ME", "HELL IN HEAVEN", "UP NO MORE", "DO WHAT WE LIKE", "BRING IT BACK"],
+    tracklist: ["I CAN'T STOP ME", "HELL IN HEAVEN", "UP NO MORE", "DO WHAT WE LIKE", "BRING IT BACK", "BELIEVER", "QUEEN", "GO HARD", "SHOT CLOCK", "HANDLE IT", "DEPEND ON YOU", "SAY SOMETHING", "BEHIND THE MASK"],
     precioCD: 35000,
     precioVinilo: 61250,
     precioCasete: 19600
   },
   {
     id: "formula-of-love",
-    titulo: "Formula of Love",
+    titulo: "Formula of Love: O+T= <3",
     artista: "TWICE",
     imagen: "Imagenes/PortadaFormulaOfLove.jpg",
     descripcion: "El tercer álbum de estudio coreano del grupo TWICE, explorando conceptos científicos sobre el amor.",
-    tracklist: ["SCIENTIST", "MOONLIGHT", "ICON", "CRUEL", "LAST WALTZ"],
+    tracklist: ["Scientist", "Moonlight", "Icon", "Cruel", "Real You", "F.I.L.A (Fall In Love Again)", "Last Waltz", "Espresso", "Rewind", "Cactus", "Push & Pull", "Hello", "1, 3, 2", "Candy", "The Feels", "Scientist (R3HAB Remix)"],
     precioCD: 45000,
     precioVinilo: 78750,
     precioCasete: 25200
@@ -601,7 +600,7 @@ const misAlbumes = [
     artista: "f(x)",
     imagen: "Imagenes/PortadaPinkTape.jpg",
     descripcion: "Lanzado en 2013, es catalogado un clásico de culto del K-Pop por su sonido experimental y estética única.",
-    tracklist: ["Rum Pum Pum Pum", "Shadow", "Pretty Girl", "Kick", "Airplane"],
+    tracklist: ["Rum Pum Pum Pum", "Shadow", "Pretty Girl", "Kick", "Signal", "Step", "Goodbye Summer (feat. D.O. of EXO)", "Airplane", "Toy", "No More", "Snapshot", "Ending Page"],
     precioCD: 30000,
     precioVinilo: 52500,
     precioCasete: 16800
@@ -612,7 +611,7 @@ const misAlbumes = [
     artista: "f(x)",
     imagen: "Imagenes/PortadaRedLight.jpg",
     descripcion: "Un álbum audaz con conceptos oscuros y ritmos electrónicos intensos que consolidó el estilo alternativo de f(x).",
-    tracklist: ["Red Light", "MILK", "Butterfly", "Rainbow", "Dracula"],
+    tracklist: ["Red Light","MILK","Butterfly","Rainbow","All Night","Vacance","Spit It Out","Boom Bang Boom","Dracula","Summer Lover","Paper Heart"],
     precioCD: 45000,
     precioVinilo: 78750,
     precioCasete: 25200
@@ -623,7 +622,7 @@ const misAlbumes = [
     artista: "f(x)",
     imagen: "Imagenes/Portada4Walls.jpg",
     descripcion: "El cuarto larga duración del grupo, aclamado por incorporar elementos vanguardistas de música Deep House.",
-    tracklist: ["4 Walls", "Glitter", "Deja Vu", "X", "Rude Love"],
+    tracklist: ["4 Walls", "Glitter", "Deja Vu", "X", "Rude Love", "Diamond", "Traveler", "Papi", "Cash Me Out", "When I'm Alone"],
     precioCD: 40000,
     precioVinilo: 70000,
     precioCasete: 22400
@@ -634,7 +633,7 @@ const misAlbumes = [
     artista: "Red Velvet",
     imagen: "Imagenes/PortadaTheRed.jpg",
     descripcion: "El explosivo y enérgico álbum debut de Red Velvet que define su característico lado pop brillante 'Red'.",
-    tracklist: ["Dumb Dumb", "Huff n Puff", "Campfire", "Red Dress", "Oh Boy"],
+    tracklist: ["Dumb Dumb", "Huff n Puff", "Campfire", "Red Dress", "Oh Boy", "Lady's Room", "Time Slip", "Don't U Wait No More", "Day 1", "Cool World"],
     precioCD: 40000,
     precioVinilo: 70000,
     precioCasete: 22400
@@ -643,9 +642,9 @@ const misAlbumes = [
     id: "perfect-velvet",
     titulo: "Perfect Velvet - The 2nd Album",
     artista: "Red Velvet",
-    imagen: "Imagenes/PortadaPerfectVelvet.jpg",
+    imagen: "Imagenes/PortadaPeekABoo   .jpg",
     descripcion: "Representa el sofisticado lado 'Velvet' del grupo, virando hacia un concepto maduro de R&B y Pop.",
-    tracklist: ["Peek-A-Boo", "Look", "I Just", "Kingdom Come", "My Second Date"],
+    tracklist: ["Peek-A-Boo", "Look", "I Just", "Kingdom Come", "My Second Date", "Attaboy", "Perfect 10", "About Love", "Moonlight Melody"],
     precioCD: 40000,
     precioVinilo: 70000,
     precioCasete: 22400
@@ -656,7 +655,7 @@ const misAlbumes = [
     artista: "Wonder Girls",
     imagen: "Imagenes/PortadaTheWonderYears.jpg",
     descripcion: "Lanzado en 2007, un pilar nostálgico del Pop coreano retro que incluye el mega éxito nacional 'Tell Me'.",
-    tracklist: ["I Wanna", "This Fool", "Tell Me", "Headache"],
+    tracklist: ["I Wanna", "This Fool", "Tell Me", "Friend", "Headache"],
     precioCD: 60000,
     precioVinilo: 105000,
     precioCasete: 33600
@@ -667,18 +666,18 @@ const misAlbumes = [
     artista: "Laufey",
     imagen: "Imagenes/PortadaAMatterOfTime.jpg",
     descripcion: "Edición especial que compila las cautivadoras piezas vocales de jazz tradicional y pop de Laufey.",
-    tracklist: ["Fragile", "Beautiful Stranger", "Dear Soulmate", "Valentine"],
+    tracklist: ["Clockwork", "Lover Girl", "Snow White", "Castle in Hollywood", "Carousel", "Silver Lining", "Too Little, Too Late", "Cuckoo Ballet (Interlude)", "Forget-Me-Not", "Tough Luck", "A Cautionary Tale", "Mr. Eclectic", "Clean Air", "Sabotage", "Seems Like Old Times", "Madwoman", "How I Get", "I Wait, I Wait, I Wait", "I'll Forget About You (In Time)"],
     precioCD: 35000,
     precioVinilo: 61250,
     precioCasete: 19600
   },
   {
-    id: "bewitched-goddess",
+    id: "bewitched",
     titulo: "Bewitched: The Goddess Edition",
     artista: "Laufey",
-    imagen: "Imagenes/PortadaBewitchedGoddess.jpg",
+    imagen: "Imagenes/PortadaBewitched.jpg",
     descripcion: "La aclamada producción de Laufey que revivió el interés del público joven en el jazz vocal contemporáneo.",
-    tracklist: ["Dreamer", "Second Best", "Haunted", "Must Be Love", "From The Start"],
+    tracklist: ["Dreamer", "Second Best", "Haunted"],
     precioCD: 35000,
     precioVinilo: 61250,
     precioCasete: 19600
@@ -689,7 +688,7 @@ const misAlbumes = [
     artista: "Laufey",
     imagen: "Imagenes/PortadaEverythingIKnowAboutLove.jpg",
     descripcion: "El brillante álbum de estudio debut de Laufey, lleno de arreglos sinfónicos románticos mezclados con jazz.",
-    tracklist: ["Fragile", "Dear Soulmate", "Lucky for Me", "Falling Behind"],
+    tracklist: ["Valentine", "Fragile", "Beautiful Stranger", "Above the Chinese Restaurant", "Dear Soulmate", "What Love Will Do to You", "I Don't Know You at All", "Everything I Know About Love", "Hi", "Dance with You Tonight", "Night Light", "Questions for the Universe", "Best Friend"],
     precioCD: 45000,
     precioVinilo: 78750,
     precioCasete: 25200
@@ -709,9 +708,9 @@ const misAlbumes = [
     id: "getz-gilberto",
     titulo: "Getz/Gilberto",
     artista: "Stan Getz, João Gilberto",
-    imagen: "Imagenes/PortadaGetzGilberto.jpg",
+    imagen: "Imagenes/PortadaGetzGiliberto.jpg",
     descripcion: "El histórico encuentro musical de 1964 que internacionalizó la Bossa Nova en todo el planeta.",
-    tracklist: ["The Girl from Ipanema", "Doralice", "Para Machuchar Meu Coração", "Desafinado", "Corcovado"],
+    tracklist: ["The Girl from Ipanema", "Doralice", "P'ra Machucar Meu Coração", "Desafinado", "Corcovado (Quiet Nights of Quiet Stars)", "Só Danço Samba", "O Grande Amor", "Vivo Sonhando"],
     precioCD: 50000,
     precioVinilo: 87500,
     precioCasete: 28000
@@ -722,7 +721,7 @@ const misAlbumes = [
     artista: "Chick Corea",
     imagen: "Imagenes/PortadaTheBestOfChickCorea.jpg",
     descripcion: "Una retrospectiva esencial de las composiciones de jazz fusión del legendario tecladista Chick Corea.",
-    tracklist: ["Spain", "Armando's Rhumba", "Windows", "Crystal Silence"],
+    tracklist: ["Straight Up and Down", "Tones for Joan's Bones", "Matrix", "My One and Only Love", "Windows", "Samba Yantra", "Pannonica", "Now He Sings, Now He Sobs", "Toy Room", "Blues Connotation", "Nefertiti"],
     precioCD: 40000,
     precioVinilo: 70000,
     precioCasete: 22400
@@ -733,7 +732,7 @@ const misAlbumes = [
     artista: "Lisa Ono",
     imagen: "Imagenes/PortadaBossaHulaNova.jpg",
     descripcion: "Una fresca y playera fusión entre las melodías tradicionales hawaianas y la calidez de la Bossa Nova por Lisa Ono.",
-    tracklist: ["Blue Hawaii", "Hawaiian Wedding Song", "Aloha Oe", "Beyond The Reef"],
+    tracklist: ["Hula Girl", "Beyond the Reef", "Pearly Shells", "Blue Hawaii", "The Hawaiian Wedding Song", "Aloha Oe", "Hawaiian Paradise", "Tiny Bubbles", "Hawaiian Sunset", "Lovely Hula Hands", "Hukilau Song", "I'll Remember You"],
     precioCD: 50000,
     precioVinilo: 87500,
     precioCasete: 28000
@@ -744,7 +743,7 @@ const misAlbumes = [
     artista: "Masayoshi Takanaka",
     imagen: "Imagenes/PortadaSeychelles.jpg",
     descripcion: "El legendario álbum debut de Takanaka lanzado en 1976, pilar indiscutible del City Pop instrumental japonés.",
-    tracklist: ["Oh! Tengo Suerte", "Tokyo Reggie", "Shady Lady", "Samba Pati", "Tropique"],
+    tracklist: ["OH! TENGO SUERTE", "Tokyo Reggie", "Shinkirō no Shima e", "Akogare no Seychelles Shotō", "Funkee Mah-Chan", "Sayonara...... Fuji-san", "Bird Island Kyūkō", "Tropic Birds"],
     precioCD: 35000,
     precioVinilo: 61250,
     precioCasete: 19600
@@ -755,7 +754,7 @@ const misAlbumes = [
     artista: "Masayoshi Takanaka",
     imagen: "Imagenes/PortadaBrasilianSkies.jpg",
     descripcion: "Un álbum clásico de jazz fusion y city pop lanzado en 1978 por el icónico guitarrista Masayoshi Takanaka.",
-    tracklist: ["Beleza Pula", "Brasilian Skies", "Nights", "I Remember Clifford", "Disco 'B'"],
+    tracklist: ["The Real Thing", "Malibu", "Aqua", "Samba do Marcos", "That's What You Get", "Samba de Verão", "Dreaming", "Rio Funk", "Walkin' in Rio"],
     precioCD: 35000,
     precioVinilo: 61250,
     precioCasete: 19600
@@ -766,7 +765,7 @@ const misAlbumes = [
     artista: "Kiefer",
     imagen: "Imagenes/PortadaMemoryBomb.jpg",
     descripcion: "Lanzamiento contemporáneo de jazz instrumental y beats de hip-hop por el pianista y productor Kiefer.",
-    tracklist: ["i remember this", "cute", "sunny", "memory bomb", "what a day"],
+    tracklist: ["Daydreaming", "Nowhere Fast", "Overture", "NewLevels NewDevils", "Get to the Moon", "Memory Bomb", "Entr’acte", "BusyForYa", "Won’t Be Long", "Don’t Fail Me Now", "Can’t Let a Good Thing Go", "As She Was", "I Let My Hair Grow"],
     precioCD: 50000,
     precioVinilo: 87500,
     precioCasete: 28000
@@ -777,7 +776,7 @@ const misAlbumes = [
     artista: "Branford Marsalis Quartet",
     imagen: "Imagenes/PortadaDedicatedToYou.jpg",
     descripcion: "Un tributo estilizado al jazz tradicional interpretado magistralmente por Branford Marsalis y su cuarteto.",
-    tracklist: ["Dedicated to You", "Stella by Starlight", "Ruby, My Dear", "Lush Life"],
+    tracklist: ["Autumn Serenade", "Dedicated to You", "Big Nick", "You Are Too Beautiful", "Lush Life", "26-2", "My One and Only Love", "They Say It's Wonderful", "Central Park West", "Say It (Over and Over Again)", "Nancy (With the Laughing Face)", "Big Nick (Trio)"],
     precioCD: 43000,
     precioVinilo: 75250,
     precioCasete: 24080
