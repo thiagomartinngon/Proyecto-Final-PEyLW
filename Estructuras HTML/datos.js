@@ -508,8 +508,8 @@ const misAlbumes = [
   },
   {
     id: "oh",
-    titulo: "Oh!",
-    artista: "Girls' Generation - The 2nd Album",
+    titulo: "Oh! - The 2nd Album",
+    artista: "Girls' Generation",
     imagen: "Imagenes/PortadaOh.jpg",
     descripcion: "El histórico segundo álbum de las reinas indiscutibles del K-Pop que dominó los rankings en el año 2010.",
     tracklist: ["Oh!", "Show! Show! Show!", "Sweet Talking Baby", "Forever", "Be Happy", "Boys & Girls (feat. Key)", "Talk to Me", "Star Star Star (☆★☆)", "Stick Wit U", "Day by Day", "Gee", "Genie"],
