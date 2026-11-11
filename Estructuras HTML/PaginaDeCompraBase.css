@@ -138,6 +138,9 @@ main {
     padding: 5px;
 }
 
+ol {
+    padding-left: 30px;
+}
 
 .volverIndex {
     display: inline-block; 
