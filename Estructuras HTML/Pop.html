@@ -26,7 +26,9 @@
             <h3>You Seem Pretty Sad For a Girl So in Love</h3>
             <p>Olivia Rodrigo</p>
             <p>$30.000</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="redirigirAPlantilla('you-seem-pretty-sad')">Comprar</button>
+           
+
         </div>
 
         <div class="Album">
@@ -34,7 +36,7 @@
             <h3>GUTS</h3>
             <p>Olivia Rodrigo</p>
             <p>$23.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('guts')">Comprar</button> 
         </div>
         
         <div class="Album">
@@ -43,7 +45,7 @@
             <h3>Laurel Hell</h3>
             <p>Mitski</p>
             <p>$40.000</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="redirigirAPlantilla('laurel-hell')">Comprar</button>
         </div>
         
         <div class="Album">
@@ -52,7 +54,7 @@
             <h3>Fancy That</h3>
             <p>PinkPantheress</p>
             <p>$28.000</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="redirigirAPlantilla('fancy-that')">Comprar</button>
         </div>
 
         <div class="Album">
@@ -60,7 +62,7 @@
             <h3>Man's Best Friend (Portada Alternativa)</h3>
             <p>Sabrina Carpenter</p>
             <p>$23.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('mans-best-friend')">Comprar</button>
         </div>
         
         <div class="Album">
@@ -68,7 +70,7 @@
             <h3>Sweet Boy</h3>
             <p>Todd Malcolm</p>
             <p>$35.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('sweet-boy')">Comprar</button>
         </div>
         
         <div class="Album">
@@ -76,7 +78,7 @@
             <h3>One of the Boys</h3>
             <p>Katy Perry</p>
             <p>$30.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('one-of-the-boys')">Comprar</button>   
         </div>
         
         <div class="Album">
@@ -84,7 +86,7 @@
             <h3>...Baby One More Time</h3>
             <p>Britney Spears</p>
             <p>$28.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('baby-one-more-time')">Comprar</button>  
         </div>
         
         <div class="Album">
@@ -92,7 +94,7 @@
             <h3>Born This Way</h3>
             <p>Lady Gaga</p>
             <p>$35.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('born-this-way')">Comprar</button>  
         </div>
 
         <div class="Album">
@@ -100,7 +102,7 @@
             <h3>Prima</h3>
             <p>ADÉLA</p>
             <p>$23.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('prima')">Comprar</button>   
         </div>
 
         <div class="Album">
@@ -108,7 +110,7 @@
             <h3>Oral Fixation, Vol. 2 (Edición Extendida)</h3>
             <p>Shakira</p>
             <p>$23.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('oral-fixation')">Comprar</button>  
         </div>
         
         <div class="Album">
@@ -116,7 +118,7 @@
             <h3>DeBÍ TiRAR MáS FOToS</h3>
             <p>Bad Bunny</p>
             <p>$23.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('debi-tirar-mas-fotos')">Comprar</button>   
         </div>
 
         <div class="Album">
@@ -124,7 +126,7 @@
             <h3>Mucho</h3>
             <p>Babasonicos</p>
             <p>$23.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('mucho')">Comprar</button> 
         </div>
 
         <div class="Album">
@@ -132,7 +134,7 @@
             <h3>El Templo del Pop</h3>
             <p>Miranda!</p>
             <p>$23.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('el-templo-del-pop')">Comprar</button>    
         </div>
         
         <div class="Album">
@@ -140,32 +142,14 @@
             <h3>Sin Restricciones</h3>
             <p>Miranda!</p>
             <p>$23.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('sin-restricciones')">Comprar</button>  
         </div>
     </main>
 
     
-<script>
-    document.querySelectorAll(".comprar").forEach(function(boton) {
 
-        boton.addEventListener("click", function() {
-
-            const album = boton.closest(".Album");
-
-            const datosDisco = {
-                titulo: album.querySelector("h3").textContent,
-                artista: album.querySelector("p").textContent,
-                imagen: album.querySelector("img").getAttribute("src")
-            };
-
-            localStorage.setItem("discoParaFicha", JSON.stringify(datosDisco));
-
-            window.location.href = "PaginaDeCompraBase.html";
-
-        });
-
-    });
-</script>
+ <script src="datos.js"></script>
+<script src="app.js"></script>
 
 </body>
 </html>

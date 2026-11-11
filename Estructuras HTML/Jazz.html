@@ -25,7 +25,7 @@
             <h3>A Matter of Time: The Final Hour</h3>
             <p>Laufey</p>
             <p>$35.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('a-matter-of-time')">Comprar</button> 
         </div>
 
         <div class="Album">
@@ -33,7 +33,7 @@
             <h3>Bewitched: The Goddess Edition</h3>
             <p>Laufey</p>
             <p>$35.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('bewitched')">Comprar</button>   
         </div>
 
          <div class="Album">
@@ -41,7 +41,7 @@
             <h3>Everything I Know About Love </h3>
             <p>Laufey</p>
             <p>$45.000</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="redirigirAPlantilla('everything-i-know-about-love')">Comprar</button>
         </div>
 
         <div class="Album">
@@ -49,7 +49,7 @@
             <h3>Kind of Blue</h3>
             <p>Miles Davis</p>
             <p>$45.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('kind-of-blue')">Comprar</button>    
         </div>
 
         <div class="Album">
@@ -57,7 +57,7 @@
             <h3>Getz/Gilberto</h3>
             <p>Stan Getz, João Gilberto</p>
             <p>$50.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('getz-gilberto')">Comprar</button>    
         </div>
 
         <div class="Album">
@@ -65,7 +65,7 @@
             <h3>The Best of Chick Corea</h3>
             <p>Chick Corea</p>
             <p>$40.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('the-best-of-chick-corea')">Comprar</button>    
         </div>
 
         <div class="Album">
@@ -73,7 +73,7 @@
             <h3>Bossa Hula Nova</h3>
             <p>Lisa Ono</p>
             <p>$50.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('bossa-hula-nova')">Comprar</button>    
         </div>
 
         <div class="Album">
@@ -81,7 +81,7 @@
             <h3>SEYCHELLES</h3>
             <p>Masayoshi Takanaka</p>
             <p>$35.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('seychelles')">Comprar</button>    
         </div>
 
         <div class="Album">
@@ -89,7 +89,7 @@
             <h3>Brasilian Skies</h3>
             <p>Masayoshi Takanaka</p>
             <p>$35.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('brasilian-skies')">Comprar</button>    
         </div>
 
         <div class="Album">
@@ -97,7 +97,7 @@
             <h3>Memory Bomb</h3>
             <p>Kiefer</p>
             <p>$50.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('memory-bomb')">Comprar</button>    
         </div>
 
         <div class="Album">
@@ -105,30 +105,12 @@
             <h3>Dedicated to You</h3>
             <p>Branford Marsalis Quartet</p>
             <p>$43.000</p>
-            <button class="comprar">Comprar</button>    
+            <button class="comprar" onclick="redirigirAPlantilla('dedicated-to-you')">Comprar</button>    
         </div>
     </main>
 
-    <script>
-    document.querySelectorAll(".comprar").forEach(function(boton) {
-
-        boton.addEventListener("click", function() {
-
-            const album = boton.closest(".Album");
-
-            const datosDisco = {
-                titulo: album.querySelector("h3").textContent,
-                artista: album.querySelector("p").textContent,
-                imagen: album.querySelector("img").getAttribute("src")
-            };
-
-            localStorage.setItem("discoParaFicha", JSON.stringify(datosDisco));
-
-            window.location.href = "PaginaDeCompraBase.html";
-
-        });
-
-    });
-</script>
+    
+ <script src="datos.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

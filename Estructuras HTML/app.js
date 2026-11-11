@@ -3,7 +3,6 @@ function redirigirAPlantilla(idAlbum) {
     window.location.href = "PaginaDeCompraBase.html";
 }
 
-
 function actualizarContadorIndex() { 
     const contador = document.getElementById("contadorCarrito"); 
     if (!contador) return; 

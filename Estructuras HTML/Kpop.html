@@ -26,7 +26,7 @@
             <h3>Blue Valentine</h3>
             <p>NMIXX</p>
             <p>$35.000</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="redirigirAPlantilla('blue-valentine')">Comprar</button> 
         </div>
 
          <div class="Album">
@@ -34,7 +34,7 @@
             <h3>Oh!</h3>
             <p>Girls' Generation - The 2nd Album</p>
             <p>$45.000</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="redirigirAPlantilla('oh')">Comprar</button>
         </div>
 
         <div class="Album">
@@ -42,7 +42,7 @@
             <h3>FOREVER 1 - The 7th Album</h3>
             <p>Girls' Generation</p>
             <p>$40.000</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="redirigirAPlantilla('forever-1')">Comprar</button>
         </div>
 
         <div class="Album">
@@ -50,7 +50,7 @@
             <h3>[X X]</h3>
             <p>LOONA</p>
             <p>$55.000</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="redirigirAPlantilla('xx')">Comprar</button>
         </div>
 
         <div class="Album">
@@ -58,7 +58,7 @@
             <h3>UNFORGIVEN</h3>
             <p>LE SSERAFIM</p>
             <p>$30.000</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="redirigirAPlantilla('unforgiven')">Comprar</button>
         </div>
 
         <div class="Album">
@@ -66,7 +66,7 @@
             <h3>Armageddon - The 1st Album</h3>
             <p>aespa</p>
             <p>$30.000</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="redirigirAPlantilla('armageddon')">Comprar</button>
         </div>
 
         <div class="Album">
@@ -74,7 +74,7 @@
             <h3>Lemonade - The 2nd Album</h3>
             <p>aespa</p>
             <p>$40.000</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="redirigirAPlantilla('lemonade')">Comprar</button>
         </div>
 
         <div class="Album">
@@ -82,7 +82,7 @@
             <h3>Eyes Wide Open</h3>
             <p>TWICE</p>
             <p>$35.000</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="redirigirAPlantilla('eyes-wide-open')">Comprar</button>
         </div>
 
          <div class="Album">
@@ -90,7 +90,7 @@
             <h3>Formula of Love</h3>
             <p>TWICE</p>
             <p>$45.000</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="redirigirAPlantilla('formula-of-love')">Comprar</button>
         </div>
 
         <div class="Album">
@@ -98,7 +98,7 @@
             <h3>Pink Tape - The 2nd Album</h3>
             <p>f(x)</p>
             <p>$30.000</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="redirigirAPlantilla('pink-tape')">Comprar</button>
         </div>
 
         <div class="Album">
@@ -106,7 +106,7 @@
             <h3>Red Light - The 3rd Album</h3>
             <p>f(x)</p>
             <p>$45.000</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="redirigirAPlantilla('red-light')">Comprar</button>
         </div>
 
         <div class="Album">
@@ -114,7 +114,7 @@
             <h3>4 Walls - The 4th Album</h3>
             <p>f(x)</p>
             <p>$40.000</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="redirigirAPlantilla('4walls')">Comprar</button>
         </div>
 
         <div class="Album">
@@ -122,7 +122,7 @@
             <h3>The Red - The 1st Album</h3>
             <p>Red Velvet</p>
             <p>$40.000</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="redirigirAPlantilla('the-red')">Comprar</button>
         </div>
 
         <div class="Album">
@@ -130,7 +130,7 @@
             <h3>Perfect Velvet - The 2nd Album</h3>
             <p>Red Velvet</p>
             <p>$40.000</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="redirigirAPlantilla('perfect-velvet')">Comprar</button>
         </div>
 
         <div class="Album">
@@ -138,35 +138,15 @@
             <h3>The Wonder Years</h3>
             <p>Wonder Girls</p>
             <p>$60.000</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="redirigirAPlantilla('the-wonder-years')">Comprar</button>
         </div>
 
     </main>
 
-    <script>
-        document.addEventListener("click", function(evento) {
-
-            if (evento.target.classList.contains("comprar")) {
-
-                const album = evento.target.closest(".Album");
-
-                const datosDisco = {
-                    titulo: album.querySelector("h3").textContent,
-                    artista: album.querySelector("p").textContent,
-                    imagen: album.querySelector("img").getAttribute("src"),
-                    precio: album.querySelectorAll("p")[1].textContent
-                };
-
-                localStorage.setItem(
-                    "discoParaFicha",
-                    JSON.stringify(datosDisco)
-                );
-
-                window.location.href = "PaginaDeCompraBase.html";
-            }
-
-        });
-    </script>
+    
+    
+     <script src="datos.js"></script>
+    <script src="app.js"></script>
 
 </body>
 </html>

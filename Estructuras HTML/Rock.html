@@ -146,27 +146,9 @@
     </main>
 
        
-<script>
-    document.querySelectorAll(".comprar").forEach(function(boton) {
 
-        boton.addEventListener("click", function() {
-
-            const album = boton.closest(".Album");
-
-            const datosDisco = {
-                titulo: album.querySelector("h3").textContent,
-                artista: album.querySelector("p").textContent,
-                imagen: album.querySelector("img").getAttribute("src")
-            };
-
-            localStorage.setItem("discoParaFicha", JSON.stringify(datosDisco));
-
-            window.location.href = "PaginaDeCompraBase.html";
-
-        });
-
-    });
-</script>
+ <script src="datos.js"></script>
+    <script src="app.js"></script>
 
 </body>
 </html>
