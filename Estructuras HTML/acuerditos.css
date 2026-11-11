@@ -1,0 +1,36 @@
+* {
+    padding: 2;
+    margin: 9;
+}
+body {
+    background: #000;
+    margin: 0;
+}
+
+.texto {
+    text-align: center;
+}
+
+.escenario {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.fila-arriba {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.fila-abajo {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.gif {
+    width: 280px;
+    height: 330px;
+    object-fit: cover; 
+}

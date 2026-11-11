@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorpresita</title>
+    <link rel="stylesheet" href="acuerditos.css">
+</head>
+<body>
+    <div class="texto">
+        <a href="#" id="enlaceVideo">Toca aquí para leer los acuerdos y condiciones</a>
+    </div>
+
+    <!-- Hola profe la verdad que esta pagina fue meramente creada por, amor al arte y desear hacernos
+     los chistositos la verdad, se nota el poco concomiento d alguien (dan) y la ayuda externa (aldana)-->
+    <div class="escenario" id="escenario" style="display:none;">
+
+        <div class="fila-arriba">
+            <img class="gif" src="Imagenes/spamton-dance.gif" alt="GIF 1"> 
+
+            <video id="miVideo" width="640" height="360" controls>
+                <source src="Imagenes/videoepico.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+
+            <img class="gif" src="Imagenes/doctor-casa-y-maomao.gif" alt="GIF 2">
+        </div>
+
+        <div class="fila-abajo">
+            <div class="a">
+            <img class="gif" src="Imagenes/memevalen.jfif" alt="GIF 3">
+            </div>
+            <img class="gif" src="Imagenes/gatito-programador.gif" alt="GIF 4">
+            <img class="gif" src="Imagenes/el-buen-saul.gif" alt="GIF 5">
+            <img class="gif" src="Imagenes/pablito-no-romero.gif" alt="GIF 6">
+        </div>
+    </div>
+
+    <script>
+    document.getElementById('enlaceVideo').addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.getElementById('escenario').style.display = 'flex';
+
+        document.getElementById('miVideo').play().catch(function(error) {
+            console.log("Error al reproducir:", error);
+        });
+    });
+    </script>
+</body>
+</html>
